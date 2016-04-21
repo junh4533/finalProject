@@ -92,17 +92,20 @@
     background: none;
 }
 
+/*hide/show top navbar*/
+
 @media(max-width:768px) {
     .navbar ul {
         display: none;
     }
+    
 }
 
-/*@media(min-width:768px) {*/
-/*    #menu-toggle {*/
-/*        display: none;*/
-/*    }*/
-/*}*/
+@media(min-width:768px) {
+    #menu-toggle {
+        display: none;
+    }
+}
 
 #menu-toggle {
     float: right;
