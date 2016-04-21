@@ -6,6 +6,7 @@ body {
 .vid-container {
     position: relative;
     height: 100vh;
+    max-height: 65vh;
     overflow: hidden;
     z-index: -9999;
 }
