@@ -3,10 +3,13 @@ body {
     height: 100%;
 }
 
+
+/*video CSS*/
+
 .vid-container {
     position: relative;
-    height: 100vh;
-    max-height: 65vh;
+    max-height: 80vh;
+    width: 100%;
     overflow: hidden;
     z-index: -9999;
 }
@@ -20,11 +23,18 @@ body {
 }
 
 .vidContent {
-    /*position: relative;*/
-    /*top: 50%;*/
-    /*transform: translateY(-50%);*/
     color: red;
     z-index: 9999;
     background: rgba(0, 0, 0, 0.13);
     text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+
+/*content css*/
+
+.content {
+    width: 100%;
+    position: absolute;
 }
