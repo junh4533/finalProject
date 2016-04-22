@@ -1,7 +1,24 @@
-html,
-body {
-    height: 100%;
-}
+/*theme*/
+
+
+/*magenta: #DF1C80*/
+
+
+/*aqua: #2FA8A1*/
+
+
+/*gray: #A6A8AB*/
+
+
+/*bright gray: #E6E6E6*/
+
+
+/*blue: #0073A5*/
+
+/*html,*/
+/*body {*/
+/*    height: 100%;*/
+/*}*/
 
 
 /*video CSS*/
@@ -37,4 +54,8 @@ body {
 .content {
     width: 100%;
     position: absolute;
+}
+
+.icon-bar{
+    display:inline-block;
 }
