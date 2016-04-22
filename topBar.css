@@ -1,0 +1,10 @@
+
+
+/*toggle button CSS*/
+.navbar-default .navbar-toggle:focus {
+     background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover{
+    background-color: #ddd;
+}
