@@ -30,10 +30,13 @@
 
 /*video CSS*/
 
+body {
+    background-color: #E6E6E6;
+}
+
 .vidContainer {
     position: relative;
-    /*position: absolute;*/
-    max-height: 85vh;
+    max-height: calc(100vh - 52px);
     overflow: hidden;
     z-index: -1;
 }
@@ -55,14 +58,32 @@
     right: 0;
     bottom: 0;
     left: 0;
+    color: white;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: red;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 8vw;
+    font-weight: 700;
+}
+
+p span {
+    display: block;
 }
 
 
-/*content css*/
+/*homepage content css*/
 
+.homeContent {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #2FA8A1;
+}
 
-/*.homeContent {}*/
+#wrapper.toggled #display{
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    background-color: rgba(0, 25, 75, .7);
+    background-blend-mode: multiply;
+}

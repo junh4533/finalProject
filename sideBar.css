@@ -25,6 +25,8 @@
 
 #wrapper.toggled {
     padding-left: 200px;
+    
+    
 }
 
 #sidebar-wrapper {
@@ -45,6 +47,7 @@
 #wrapper.toggled .content {
     position: absolute;
     margin-right: -200px;
+    
 }
 
 
@@ -58,7 +61,7 @@
     margin: 0;
     padding: 0;
     /*background-color: #E6E6E6;*/
-    background: linear-gradient(to bottom left, white, gray);
+    background: linear-gradient(to bottom left, #0073A5, #2FA8A1);
 }
 
 .sidebar-nav li {
@@ -69,7 +72,7 @@
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #2FA8A1;
+    color: #E6E6E6;
 }
 
 .sidebar-nav li a:hover {
@@ -84,7 +87,7 @@
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #0073A5;
+    color: #A6A8AB;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -110,5 +113,3 @@ li {
         display: none;
     }
 }
-
-

@@ -9,12 +9,11 @@
 }
 
 .navbar {
-    background-color: #E6E6E6;
+    background-color: white;
     display: block;
+    margin-bottom: 0;
+ 
 }
-
-.navbar-default .navbar-nav>li>a:hover{
-  color:blue;
-  
+.navbar-default .navbar-nav>li>a:hover {
+    color: blue;
 }
-
