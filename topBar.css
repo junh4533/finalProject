@@ -1,3 +1,21 @@
+/*theme*/
+
+
+/*magenta: #DF1C80*/
+
+
+/*aqua: #2FA8A1*/
+
+
+/*gray: #A6A8AB*/
+
+
+/*bright gray: #E6E6E6*/
+
+
+/*blue: #0073A5*/
+
+
 /*toggle button CSS*/
 
 .navbar-default .navbar-toggle:focus {
@@ -9,11 +27,15 @@
 }
 
 .navbar {
-    background-color: white;
+    background-color: #2FA8A1;
     display: block;
     margin-bottom: 0;
- 
 }
+
 .navbar-default .navbar-nav>li>a:hover {
-    color: blue;
+    color: #DF1C80;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
 }
