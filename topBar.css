@@ -24,10 +24,12 @@
 
 .navbar-default .navbar-toggle:hover {
     background-color: #ddd;
+    border-color: transparent;
 }
 
 .navbar {
-    background-color: #2FA8A1;
+    background: linear-gradient(to bottom left, #0073A5, #2FA8A1);
+    border-color: transparent;
     display: block;
     margin-bottom: 0;
 }
