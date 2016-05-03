@@ -81,9 +81,3 @@ p span {
     color: #2FA8A1;
 }
 
-#wrapper.toggled #display{
-    -webkit-filter: blur(3px);
-    filter: blur(3px);
-    background-color: rgba(0, 25, 75, .7);
-    background-blend-mode: multiply;
-}

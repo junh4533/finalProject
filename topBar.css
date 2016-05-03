@@ -27,6 +27,9 @@
     border-color: transparent;
 }
 
+
+/*navbar CSS*/
+
 .navbar {
     background: linear-gradient(to bottom left, #0073A5, #2FA8A1);
     border-color: transparent;
@@ -40,4 +43,28 @@
 
 .navbar-default .navbar-nav>li>a {
     color: white;
+}
+
+
+/*logo CSS*/
+
+/*.navbar-brand {*/
+    
+/*    padding-bottom:23%;*/
+    
+/*}*/
+
+
+/*hide/show top navbar*/
+
+@media(max-width:768px) {
+    .navbar ul {
+        display: none;
+    }
+}
+
+@media(min-width:768px) {
+    #menu-toggle {
+        display: none;
+    }
 }

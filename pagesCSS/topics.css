@@ -1,0 +1,31 @@
+/*theme*/
+
+
+/*magenta: #DF1C80*/
+
+
+/*aqua: #2FA8A1*/
+
+
+/*gray: #A6A8AB*/
+
+
+/*bright gray: #E6E6E6*/
+
+
+/*blue: #0073A5*/
+
+h1 {
+    text-align: center;
+}
+
+.circleCrop {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.ninth{
+    background-color: #2FA8A1;
+}
