@@ -26,23 +26,18 @@ h1 {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    margin:auto;
+    margin: auto;
 }
 
 .row {
-    /*padding-bottom: 10px;*/
+    padding-bottom: 30px;
 }
 
 .ninth {
-    /*width:100vw;*/
     background-color: white;
-    /*height: calc(100vh);*/
-    /*  height: 100vh;*/
 }
 
-.tenth {
-    background-color: #40e0d0;
-}
+
 
 .eleventh {
     background-color: white;
@@ -50,4 +45,13 @@ h1 {
 
 .ninthText {
     text-align: center;
+}
+
+.robotics,
+.scratch {
+    height: calc(100vh - 52px);
+}
+
+.scratch {
+    background-color: #40e0d0;
 }
