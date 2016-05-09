@@ -76,8 +76,8 @@ p span {
 /*homepage content css*/
 
 .homeContent {
-    margin-left: 15px;   
-    margin-right: 15px;
     color: #2FA8A1;
 }
-
+.introContent{
+    font-size:15px;
+}
