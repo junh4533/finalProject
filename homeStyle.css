@@ -77,7 +77,7 @@ p span {
 
 .homeContent {
     color: #2FA8A1;
-    margin-top:20px;
+    margin-top:25px;
   
 }
 .title{
@@ -91,4 +91,12 @@ p span {
 
 .navStyle{
     font-family: 'Oxygen', sans-serif;
+}
+
+.subtitle{
+    font-weight: bold;
+}
+
+.introText{
+    font-size: 16px;
 }
