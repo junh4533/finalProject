@@ -31,13 +31,15 @@ body {
 
 .row {
     padding-bottom: 30px;
+    position: relative;
 }
 
 .robotics {
     height: calc(100vh - 52px);
 }
 
-.scratch,
+.scratch1,
+.scratch2,
 .processing,
 .data,
 .github,
@@ -45,53 +47,17 @@ body {
     height: 100vh;
 }
 
-.scratch,
+.scratch1,
 .data {
     background-color: #40e0d0;
 }
 
+.scratch2 {
+    background-color: white;
+}
+
 .interactivity {
     background-color: yellow;
-}
-
-
-/*scroll button*/
-
-
-/*animations*/
-
-.slideanim {
-    visibility: hidden;
-}
-
-.slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-}
-
-@keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    }
-}
-
-@-webkit-keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    }
 }
 
 
@@ -127,21 +93,20 @@ body {
 
 /*}*/
 
-.demo a {
+.row a {
     position: absolute;
     left: 50%;
     z-index: 2;
     bottom: 50px;
-    transition: opacity .3s;
     opacity: .4;
     width: 30px;
 }
 
-.demo a:hover {
+.row a:hover {
     opacity: 1;
 }
 
-#section01 a span {
+.sections a span {
     position: absolute;
     width: 15px;
     height: 15px;
@@ -149,4 +114,9 @@ body {
     border-bottom: 3px solid #40e0d0;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+}
+
+#whiteArrow span {
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
 }
