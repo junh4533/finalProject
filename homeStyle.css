@@ -43,7 +43,6 @@ body {
 
 .bgVid {
     position: relative;
-    /*position: absolute;*/
     width: 100vw;
     -webkit-filter: blur(2px);
     filter: blur(2px);
@@ -92,7 +91,6 @@ p span {
 .navStyle{
     font-family: 'Oxygen', sans-serif;
 }
-
 .subtitle{
     font-weight: bold;
 }
