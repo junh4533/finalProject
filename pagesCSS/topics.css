@@ -133,10 +133,12 @@ body {
     z-index: 2;
     bottom: 50px;
     transition: opacity .3s;
+    opacity: .4;
+    width: 30px;
 }
 
 .demo a:hover {
-    opacity: .5;
+    opacity: 1;
 }
 
 #section01 a span {
