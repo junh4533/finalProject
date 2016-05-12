@@ -77,17 +77,26 @@ p span {
 .homeContent {
     color: #2FA8A1;
     margin-top:25px;
+    /*height:100vh;*/
   
 }
 .title{
     text-align: center;
 }
+
 .introContent{
     font-size:15px;
     display:inline-block;
   text-align:center;
 }
 
+#diffColor{
+    background-color:#E6E6E6;
+}
+
+#diffColor2{
+    background-color:#2FA8A1;
+}
 .navStyle{
     font-family: 'Oxygen', sans-serif;
 }
@@ -96,5 +105,17 @@ p span {
 }
 
 .introText{
-    font-size: 16px;
+    font-size: 18px;
+}
+
+#diffColor2{
+    background-color:#2FA8A1;
+}
+
+.InText{
+    color:#E6E6E6;
+}
+
+.ImageIn{
+    margin-bottom: 35px;
 }
