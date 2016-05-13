@@ -35,12 +35,12 @@ body {
     position: relative;
 }
 
-.robotics {
-    height: calc(100vh - 52px);
+.scratch {
+    height: calc(100vh - 135px);
 }
 
-.scratch1,
-.scratch2,
+
+.robotics,
 .processing,
 .data,
 .github,
@@ -48,7 +48,7 @@ body {
     height: 100vh;
 }
 
-.scratch1,
+.scratch,
 .data {
     background-color: #40e0d0;
 }
@@ -66,6 +66,19 @@ body {
 .interactivity {
     height: 100%;
     background-color: #2FA8A1;
+}
+
+.imgLeft {
+    position: absolute;
+    margin-left: 0;
+    width: 300px;
+}
+
+.imgRight {
+    position: absolute;
+    /*margin-left: 120px;*/
+    margin-right: 0px;
+    width: 300px;
 }
 
 
