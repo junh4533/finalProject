@@ -36,9 +36,8 @@ body {
 }
 
 .scratch {
-    height: calc(100vh - 135px);
+    height: calc(100vh - 122px);
 }
-
 
 .robotics,
 .processing,
@@ -69,17 +68,24 @@ body {
 }
 
 .imgLeft {
-    position: absolute;
-    margin-left: 0;
+    /*position: absolute;*/
+    /*margin-left: 15px;*/
+    /*margin-top: 15vh;*/
     width: 300px;
 }
 
 .imgRight {
-    position: absolute;
-    /*margin-left: 120px;*/
-    margin-right: 0px;
+    /*position: absolute;*/
+    /*margin-right: 0px;*/
+    /*margin-top: 15vh;*/
     width: 300px;
 }
+
+/*@media screen and (max-width: 763px) {*/
+/*    .push {*/
+/*        background-color: lightgreen;*/
+/*    }*/
+/*}*/
 
 
 /*scroll*/
