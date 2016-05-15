@@ -35,12 +35,11 @@ body {
     position: relative;
 }
 
-.robotics {
-    height: calc(100vh - 52px);
+.scratch {
+    height: calc(100vh - 122px);
 }
 
-.scratch1,
-.scratch2,
+.robotics,
 .processing,
 .data,
 .github,
@@ -48,7 +47,7 @@ body {
     height: 100vh;
 }
 
-.scratch1,
+.scratch,
 .data {
     background-color: #40e0d0;
 }
@@ -67,6 +66,26 @@ body {
     height: 100%;
     background-color: #2FA8A1;
 }
+
+.imgLeft {
+    /*position: absolute;*/
+    /*margin-left: 15px;*/
+    /*margin-top: 15vh;*/
+    width: 300px;
+}
+
+.imgRight {
+    /*position: absolute;*/
+    /*margin-right: 0px;*/
+    /*margin-top: 15vh;*/
+    width: 300px;
+}
+
+/*@media screen and (max-width: 763px) {*/
+/*    .push {*/
+/*        background-color: lightgreen;*/
+/*    }*/
+/*}*/
 
 
 /*scroll*/
