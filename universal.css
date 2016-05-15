@@ -11,3 +11,97 @@ body
 H1{
     color:#5BADA7;
 }
+body {
+    background-color: #E6E6E6;
+}
+
+.vidContainer {
+    position: relative;
+    max-height: calc(100vh - 52px);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bgVid {
+    position: relative;
+    width: 100vw;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.vidContent {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 8vw;
+    font-weight: 700;
+}
+
+p span {
+    display: block;
+}
+
+
+/*homepage content css*/
+
+.homeContent {
+    color: #2FA8A1;
+    margin-top:25px;
+    /*height:100vh;*/
+  
+}
+.title{
+    text-align: center;
+}
+
+.introContent{
+    font-size:15px;
+    display:inline-block;
+  text-align:center;
+}
+
+#diffColor{
+    background-color:#E6E6E6;
+}
+
+#diffColor2{
+    background-color:#2FA8A1;
+}
+.navStyle{
+    font-family: 'Oxygen', sans-serif;
+}
+.subtitle{
+    font-weight: bold;
+}
+
+.introText{
+    font-size: 18px;
+}
+
+#diffColor2{
+    background-color:#2FA8A1;
+}
+
+.InText{
+    color:#E6E6E6;
+}
+
+.ImageIn{
+    margin-bottom: 35px;
+}
+@media only screen and (max-width : 768px) {
+    .introText{
+        font-size:16px;
+    }
+ }

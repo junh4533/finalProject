@@ -124,3 +124,10 @@ p span {
         font-size:16px;
     }
  }
+ 
+ .placement{
+     margin-right:10px;
+ }
+ .placement-other{
+     margin-left:10px;
+ }
