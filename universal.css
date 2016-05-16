@@ -1,16 +1,17 @@
-p{
+p {
     margin: auto;
-     transform: translateX(10px); 
-     font-family: 'Raleway', sans-serif;
-}
-body
-{
+    transform: translateX(10px);
     font-family: 'Raleway', sans-serif;
 }
 
-H1{
-    color:#5BADA7;
+body {
+    font-family: 'Raleway', sans-serif;
 }
+
+H1 {
+    color: #5BADA7;
+}
+
 body {
     background-color: #E6E6E6;
 }
@@ -57,51 +58,36 @@ p span {
 
 .homeContent {
     color: #2FA8A1;
-    margin-top:25px;
+    margin-top: 25px;
     /*height:100vh;*/
-  
 }
-.title{
+
+.title {
     text-align: center;
 }
 
-.introContent{
-    font-size:15px;
-    display:inline-block;
-  text-align:center;
+#diffColor {
+    background-color: #E6E6E6;
 }
 
-#diffColor{
-    background-color:#E6E6E6;
+#diffColor2 {
+    background-color: #2FA8A1;
 }
 
-#diffColor2{
-    background-color:#2FA8A1;
-}
-.navStyle{
+.navStyle {
     font-family: 'Oxygen', sans-serif;
 }
-.subtitle{
+
+.subtitle {
     font-weight: bold;
 }
 
-.introText{
-    font-size: 18px;
-}
-
-#diffColor2{
-    background-color:#2FA8A1;
-}
-
-.InText{
-    color:#E6E6E6;
-}
-
-.ImageIn{
+.ImageIn {
     margin-bottom: 35px;
 }
-@media only screen and (max-width : 768px) {
-    .introText{
-        font-size:16px;
+
+@media only screen and (max-width: 768px) {
+    .introText {
+        font-size: 16px;
     }
- }
+}

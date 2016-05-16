@@ -48,7 +48,8 @@ body {
 }
 
 .scratch,
-.data {
+.processing,
+.github {
     background-color: #40e0d0;
 }
 
@@ -81,10 +82,28 @@ body {
     width: 300px;
 }
 
+#data {
+    width: 600px;
+    margin: auto;
+}
+
+#github {
+    width: 100%;
+}
+
+
 /*@media screen and (max-width: 763px) {*/
+
+
 /*    .push {*/
+
+
 /*        background-color: lightgreen;*/
+
+
 /*    }*/
+
+
 /*}*/
 
 

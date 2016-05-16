@@ -1,0 +1,9 @@
+.content{
+    position: relative;
+    padding-left: 10vw;
+}
+
+.video{
+    width:100vw;
+    /*height:100vh;*/
+}

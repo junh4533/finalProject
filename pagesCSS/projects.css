@@ -1,0 +1,43 @@
+#diffColor2 {
+    background-color: #DF1C80;
+}
+
+#roboticsVid {
+    position: relative;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.imageLink {
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-right:30px;
+}
+
+#processing {
+    background: url("../images/processing.png");
+      background-position: center;
+    background-size: cover;
+}
+
+#data {
+    background: url("../images/data.png");
+      background-position: center;
+    background-size: cover;
+}
+
+#git {
+    background: url("../images/github.png");
+      background-position: center;
+    background-size: cover;
+}
+
+#web {
+    background: url("../images/shabr.png");
+      background-position: center;
+    background-size: cover;
+}
