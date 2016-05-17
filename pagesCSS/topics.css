@@ -21,6 +21,13 @@
 body {
     text-align: center;
     background-color: #E6E6E6;
+    width: 100vw;
+    /*overflow: hidden;*/
+}
+
+.content {
+    width: 100vw;
+    overflow: hidden;
 }
 
 .circleCrop {
@@ -69,42 +76,55 @@ body {
 }
 
 .imgLeft {
-    /*position: absolute;*/
-    /*margin-left: 15px;*/
-    /*margin-top: 15vh;*/
-    width: 300px;
+    width: 500px;
+    margin: auto;
 }
 
 .imgRight {
-    /*position: absolute;*/
-    /*margin-right: 0px;*/
-    /*margin-top: 15vh;*/
-    width: 300px;
+    width: 500px;
+    margin: auto;
 }
 
 #data {
-    width: 600px;
+    width: 500px;
     margin: auto;
 }
 
 #github {
-    width: 100%;
+    width: 420px;
 }
 
+.sectionMargin {
+    margin-top: 10vh;
+}
 
-/*@media screen and (max-width: 763px) {*/
+@media screen and (max-width: 768px) {
+    .imgLeft {
+        /*position: absolute;*/
+        /*margin-left: 15px;*/
+        /*margin-top: 15vh;*/
+        width: 200px;
+    }
+    .imgRight {
+        /*position: absolute;*/
+        /*margin-right: 0px;*/
+        /*margin-top: 15vh;*/
+        width: 200px;
+    }
+    #scratchText {
+        font-size: 10px;
+    }
+}
 
+.whiteHeading {
+    background-color: #E6E6E6;
+}
 
-/*    .push {*/
-
-
-/*        background-color: lightgreen;*/
-
-
-/*    }*/
-
-
-/*}*/
+.cyanHeading {
+    background-color: #40e0d0;
+    width: 100vw;
+    margin-left: 0;
+}
 
 
 /*scroll*/
@@ -120,20 +140,77 @@ body {
     left: 50%;
     z-index: 2;
     bottom: 50px;
-    opacity: .8;
-    width: 30px;
+    margin: auto;
 }
 
 .row a:hover {
-    opacity: 1;
+    background-color: #DF1C80;
 }
 
 .sections a span {
     position: absolute;
     width: 15px;
     height: 15px;
-    border-left: 3px solid black;
-    border-bottom: 3px solid black;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    transform: rotate(315deg);
+    transition-timing-function: ease-in-out;
+    transition: 1.5s;
+    left: 18px;
+}
+
+.circleCrop2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /*margin: auto;*/
+    background-color: #2FA8A1;
+}
+
+.circleCrop2:hover span {
+    transform: rotateY(180deg) rotateZ(315deg);
+}
+
+.flipBox {
+    perspective: 99000;
+}
+
+.flipBox,
+.front,
+.back {
+    width: 250px;
+    height: 250px;
+}
+
+.size {
+    width: 250px;
+    height: 250px;
+}
+
+.flipBox:hover .flip,
+.flipBox.hover .flip {
+    transform: rotateY(180deg);
+}
+
+.flip {
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
 }
