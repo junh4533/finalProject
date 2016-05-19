@@ -94,25 +94,93 @@ body {
     width: 420px;
 }
 
-.sectionMargin {
-    margin-top: 10vh;
-}
 
-@media screen and (max-width: 768px) {
-    .imgLeft {
-        /*position: absolute;*/
-        /*margin-left: 15px;*/
-        /*margin-top: 15vh;*/
-        width: 200px;
-    }
-    .imgRight {
-        /*position: absolute;*/
-        /*margin-right: 0px;*/
-        /*margin-top: 15vh;*/
-        width: 200px;
-    }
+/*.sectionMargin {*/
+
+
+/*    margin-top: 10vh;*/
+
+
+/*}*/
+
+
+/*@media screen and (max-width: 768px) {*/
+
+
+/*    .imgLeft {*/
+
+
+/*        position: absolute;*/
+
+
+/*        margin-left: 15px;*/
+
+
+/*        margin-top: 15vh;*/
+
+
+/*        width: 200px;*/
+
+
+/*    }*/
+
+
+/*    .imgRight {*/
+
+
+/*        position: absolute;*/
+
+
+/*        margin-right: 0px;*/
+
+
+/*        margin-top: 15vh;*/
+
+
+/*        width: 200px;*/
+
+
+/*    }*/
+
+
+/*    #scratchText {*/
+
+
+/*        font-size: 10px;*/
+
+
+/*    }*/
+
+
+/*    #processingText {*/
+
+
+/*        font-size: 10px;*/
+
+
+/*    }*/
+
+
+/*}*/
+
+@media screen and (max-width: 500px) {
     #scratchText {
         font-size: 10px;
+    }
+    #processingText {
+        font-size: 10px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    h1{
+         font-size: 20px;
+    }
+    .flipBox,
+    .front,
+    .back{
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -141,6 +209,7 @@ body {
     z-index: 2;
     bottom: 50px;
     margin: auto;
+    bottom: 10px;
 }
 
 .row a:hover {
@@ -172,19 +241,19 @@ body {
 }
 
 .flipBox {
-    perspective: 99000;
+    perspective: 1000px;
 }
 
 .flipBox,
 .front,
 .back {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 }
 
 .size {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
 }
 
 .flipBox:hover .flip,
@@ -202,9 +271,9 @@ body {
 .back {
     backface-visibility: hidden;
     position: absolute;
-    top: 0;
-    left: 0;
-    margin: auto;
+    /*top: 0;*/
+    /*left: 0;*/
+    /*margin: auto;*/
 }
 
 .front {
