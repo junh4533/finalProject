@@ -123,11 +123,11 @@ p span {
     .introText{
         font-size:16px;
     }
+ /*   .placement{*/
+ /*   margin-right:15px;*/
+ /*}*/
+ /*.placement-other{*/
+ /*    margin-left:15px;*/
+ /*}*/
  }
  
- .placement{
-     margin-right:10px;
- }
- .placement-other{
-     margin-left:10px;
- }

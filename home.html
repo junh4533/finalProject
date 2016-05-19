@@ -90,9 +90,9 @@
                 <h1 class="title">Welcome to SEP</h1>
                 <div id="diffColor2" class="row">
                    
-                        <div class="homeContent introContent col-sm-4">
-                            <h2 class="subtitle InText"> Introduction </h2>
-                            <p class="introText InText ">
+                        <div class="homeContent introContent col-sm-4 container Cent">
+                            <h2 class="subtitle InText SMhead2"> Introduction </h2>
+                            <p class="introText InText slideanim">
                                 Welcome to the SEP website. Here you will find all information about our program. 
                                 Our goal is for students to learn about all kinds of ways to be well ready for a job in a field
                                 that requires computer science
@@ -102,18 +102,18 @@
                             <!--home content div-->
                         </div>
                    
-                    <div class="homeContent introContent col-sm-8">
-                        <img class="img-responsive center-block ImageIn" src="images/StudentSEP.JPG" width="800px" height="400px">
+                    <div class="homeContent introContent col-sm-8 container ">
+                        <img class="img-responsive Cent ImageIn slideanim" src="images/StudentSEP.JPG" width="800px" height="400px">
                     </div>
                 </div>
                 
                 <div class="row">
-                <div class="homeContent introContent col-sm-8">
-                    <img class="img-responsive center-block ImageIn" src="images/SEPGreen.JPG" width="800px" height="400px">
+                <div class="homeContent introContent col-sm-8 container ">
+                    <img class="img-responsive Cent ImageIn slideanim" src="images/SEPGreen.JPG" width="800px" height="400px">
                 </div>
-                <div class="homeContent introContent col-sm-4">
-                    <h2 class="subtitle">What is SEP?</h2>
-                    <p class="introText">SEP is a computer science program established by NYC to 
+                <div class="homeContent introContent col-sm-4 container Cent">
+                    <h2 class="subtitle SMhead2">What is SEP?</h2>
+                    <p class="introText slideanim ImageIn">SEP is a computer science program established by NYC to 
                         have students become familiar with many concepts in the field of software engineering such as HTML, CSS, and JavaScript. 
                         The more students become educated in the field in computer science, 
                         the more they are able to land a job in that career. In order for students to become knowledgeable of software engineering,
@@ -122,16 +122,16 @@
                 </div>
                 </div>
                 <div class="row" id="diffColor2">
-                <div class="homeContent introContent col-sm-4">
-                    <h2 class="subtitle InText">How to join HSTAT SEP as a student</h2>
-                    <p class="introText InText">
+                <div class="homeContent introContent col-sm-4 container Cent">
+                    <h2 class="subtitle InText SMhead2">How to join HSTAT SEP as a student</h2>
+                    <p class="introText InText slideanim">
                         If you want to join SEP at HSTAT, you want to make sure that
                         you have the readiness to learn new and challenging things.
                         We do not accept anyone who refuses to work.
                     </p>
                 </div>
-                <div class="homeContent introContent col-sm-8">
-                    <img class="img-responsive center-block ImageIn" src="images/SEPShowcase.JPG" width="800px" height="400px">
+                <div class="homeContent introContent col-sm-8 container">
+                    <img class="img-responsive Cent ImageIn slideanim" src="images/SEPShowcase.JPG" width="800px" height="400px">
                 </div>
                 </div>
                 <!--content div-->
@@ -153,8 +153,20 @@
             // e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         });
-    </script>
 
+ $(document).ready(function(){     
+ $(window).scroll(function() {
+  $(".slideanim").each(function(){
+     var pos = $(this).offset().top;
+    
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+$(this).addClass("slide");
+  }
+ });
+ });
+});
+</script>
 </body>
 
 </html>
