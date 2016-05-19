@@ -22,12 +22,15 @@ body {
     text-align: center;
     background-color: #E6E6E6;
     width: 100vw;
-    /*overflow: hidden;*/
+    /*overflow: hidden; */
+    /*overflow:auto;*/
 }
 
 .content {
     width: 100vw;
-    overflow: hidden;
+    /*overflow: auto;*/
+    /*overflow:scroll;*/
+    /*overflow-y: scroll;*/
 }
 
 .circleCrop {
@@ -94,28 +97,6 @@ body {
     width: 420px;
 }
 
-.sectionMargin {
-    margin-top: 10vh;
-}
-
-@media screen and (max-width: 768px) {
-    .imgLeft {
-        /*position: absolute;*/
-        /*margin-left: 15px;*/
-        /*margin-top: 15vh;*/
-        width: 200px;
-    }
-    .imgRight {
-        /*position: absolute;*/
-        /*margin-right: 0px;*/
-        /*margin-top: 15vh;*/
-        width: 200px;
-    }
-    #scratchText {
-        font-size: 10px;
-    }
-}
-
 .whiteHeading {
     background-color: #E6E6E6;
 }
@@ -139,8 +120,11 @@ body {
     position: absolute;
     left: 50%;
     z-index: 2;
-    bottom: 50px;
+    /*bottom: 50px;*/
     margin: auto;
+    bottom: 18px;
+    /*   margin-right: 0;*/
+    /*margin-left: 0;*/
 }
 
 .row a:hover {
@@ -151,8 +135,8 @@ body {
     position: absolute;
     width: 15px;
     height: 15px;
-    border-left: 4px solid black;
-    border-bottom: 4px solid black;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
     transform: rotate(315deg);
     transition-timing-function: ease-in-out;
     transition: 1.5s;
@@ -171,20 +155,11 @@ body {
     transform: rotateY(180deg) rotateZ(315deg);
 }
 
+
+/*image flip*/
+
 .flipBox {
-    perspective: 99000;
-}
-
-.flipBox,
-.front,
-.back {
-    width: 250px;
-    height: 250px;
-}
-
-.size {
-    width: 250px;
-    height: 250px;
+    perspective: 1000px;
 }
 
 .flipBox:hover .flip,
@@ -202,9 +177,9 @@ body {
 .back {
     backface-visibility: hidden;
     position: absolute;
-    top: 0;
-    left: 0;
-    margin: auto;
+    /*top: 0;*/
+    /*left: 0;*/
+    /*margin: auto;*/
 }
 
 .front {
@@ -214,3 +189,79 @@ body {
 .back {
     transform: rotateY(180deg);
 }
+
+.flip,
+.flipBox,
+.front,
+.back {
+    width: 23vh;
+    height: 23vh;
+    /*max-height: 35vw;*/
+    /*max-width: 35vw;*/
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 12px;
+}
+
+body {
+    font-size: 8px;
+}
+
+
+/*@media screen and (min-height: 650px) {*/
+
+
+/*    h1 {*/
+
+
+/*        font-size: 30px;*/
+
+
+/*    }*/
+
+
+/*    h3 {*/
+
+
+/*        font-size: 20px;*/
+
+
+/*    }*/
+
+
+/*    body {*/
+
+
+/*        font-size: 15px;*/
+
+
+/*    }*/
+
+
+/*    .flip,*/
+
+
+/*    .flipBox,*/
+
+
+/*    .front,*/
+
+
+/*    .back {*/
+
+
+/*        width: 70vh;*/
+
+
+/*        height: 70vh;*/
+
+
+/*    }*/
+
+
+/*}*/

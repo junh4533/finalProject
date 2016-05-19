@@ -1,43 +1,81 @@
+/*theme*/
+
+
+/*magenta: #DF1C80*/
+
+
+/*aqua: #2FA8A1*/
+
+
+/*gray: #A6A8AB*/
+
+
+/*bright gray: #E6E6E6*/
+
+
+/*blue: #0073A5*/
+
+.title {
+    text-align: center;
+}
+
 #diffColor2 {
-    background-color: #DF1C80;
+    background-color: #E6E6E6;
 }
 
 #roboticsVid {
     position: relative;
-    padding-bottom: 0px;
     width: 100%;
     height: 100%;
+    margin: auto;
 }
 
-.imageLink {
-    width: 250px;
-    height: 250px;
-    background-position: center;
-    background-size: cover;
+.images {
     position: relative;
-    margin-right:30px;
+    width: 50vw;
+    height: 50vw;
+    margin: auto;
+    margin-top: 5%;
+    transition: 1s ease-out;
+    z-index: 0;
 }
 
-#processing {
-    background: url("../images/processing.png");
-      background-position: center;
-    background-size: cover;
+.imgBox {
+    position: relative;
+    display: inline;
+    left: 25%;
 }
 
-#data {
-    background: url("../images/data.png");
-      background-position: center;
-    background-size: cover;
+@media screen and (min-width: 768px) {
+    .images {
+        position: relative;
+        width: 30vw;
+        height: 30vw;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        transition: 1s ease-out;
+        z-index: 0;
+    }
 }
 
-#git {
-    background: url("../images/github.png");
-      background-position: center;
-    background-size: cover;
+.imgBox:hover > img {
+    -webkit-filter: blur(5px);
 }
 
-#web {
-    background: url("../images/shabr.png");
-      background-position: center;
-    background-size: cover;
+.imgText {
+    position: absolute;
+    top: 3%;
+    opacity: 0;
+    z-index: 9999;
+    color: #DF1C80;
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    transition: 1s ease-out;
+}
+
+.imgBox:hover > .imgText {
+    opacity: 1;
+    background-color: rgba(18, 66, 63, 0.7);
 }
