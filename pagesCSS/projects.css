@@ -15,6 +15,10 @@
 
 /*blue: #0073A5*/
 
+.title {
+    text-align: center;
+}
+
 #diffColor2 {
     background-color: #E6E6E6;
 }
@@ -42,22 +46,36 @@
     left: 25%;
 }
 
+@media screen and (min-width: 768px) {
+    .images {
+        position: relative;
+        width: 30vw;
+        height: 30vw;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        transition: 1s ease-out;
+        z-index: 0;
+    }
+}
+
 .imgBox:hover > img {
     -webkit-filter: blur(5px);
 }
 
 .imgText {
     position: absolute;
-    background-color: rgba(18, 66, 63, 0.7);
     top: 3%;
     opacity: 0;
     z-index: 9999;
-    color: magenta;
+    color: #DF1C80;
     font-size: 35px;
     width: 100%;
     text-align: center;
+    transition: 1s ease-out;
 }
 
 .imgBox:hover > .imgText {
     opacity: 1;
+    background-color: rgba(18, 66, 63, 0.7);
 }
