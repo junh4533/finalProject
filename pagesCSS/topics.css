@@ -240,3 +240,22 @@ body {
     /*    width: 50vh;*/
     /*}*/
 }
+
+/*slide animations*/
+.slideUp {
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    visibility: visible;
+}
+
+.slideLeft{
+    animation-name: slideLeft;
+    animation-duration: 1.5s;
+    visibility: visible;
+}
+
+.slideRight{
+    animation-name: slideRight;
+    animation-duration: 1.5s;
+    visibility: visible;
+}

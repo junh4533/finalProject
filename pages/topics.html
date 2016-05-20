@@ -15,10 +15,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <!--custom CSS-->
+
     <link rel="stylesheet" href="../sideBar.css">
     <link rel="stylesheet" href="../pagesCSS/topics.css">
     <link rel="stylesheet" href="../universal.css">
+    <link rel="stylesheet" href="../pagesCSS/topics.css">
     <link rel="stylesheet" href="../topBar.css">
+    <script src="../universal.js"></script>
 
     <!--fonts-->
     <link href='https://fonts.googleapis.com/css?family=Exo+2:400,900' rel='stylesheet' type='text/css'>
@@ -36,7 +39,7 @@
                 <li class="sidebar-brand">
                     <a href="../home.html">SEP</a>
                 </li>
-                 <!--Temporary disable-->
+                <!--Temporary disable-->
                 <!--<li>-->
                 <!--    <a href="teachers.html">Teachers</a>-->
                 <!--</li>-->
@@ -66,7 +69,7 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li><a href="../home.html">Home</a></li>
-                     <!--Temporary disable-->
+                    <!--Temporary disable-->
                     <!--<li><a href="teachers.html">Teachers</a></li>-->
                     <li><a href="env.html">Learning Environment</a></li>
                     <li class="active"><a href="topics.html">Topics</a></li>
@@ -220,7 +223,7 @@
                     </div>
 
                     <div class="row web sections" id="sectionWeb">
-                        <div class="col-xs-12 col-sm-4 con">
+                        <div class="col-xs-12 col-sm-4 con slideanim3">
                             <h2>Content</h2>
 
                             <p>The contnt is the core of your website!</p>
@@ -233,7 +236,7 @@
                             <span class="glyphicon glyphicon-picture"> Images</span>
                         </div>
 
-                        <div class="col-xs-12 col-sm-4 design">
+                        <div class="col-xs-12 col-sm-4 design slideanim">
                             <h2>Design</h2>
                             <p>This is what makes your website look appealing to the audience.</p>
                             <p>You can:</p>
@@ -253,7 +256,7 @@
 
                         </div>
 
-                        <div class="col-xs-12 col-sm-4 interactivity">
+                        <div class="col-xs-12 col-sm-4 interactivity slideanim2">
                             <h2>Interactivity</h2>
                             <p>In terms of difficulty, this is probably the most difficult part of web design.</p>
                             <p>This includes all the animations that are used in your website.</p>
@@ -273,47 +276,15 @@
         </div>
 
 
+    </div>
 
-        <!-- Menu Toggle Script -->
-        <script>
-            $("#menu-toggle").click(function() {
-                // e
-                // e.preventDefault();
-                $("#wrapper").toggleClass("toggled");
-            });
-        </script>
-
-
-        <!--scroll-->
-        <script>
-            // $(function() {
-            //     $('a[href*="#"]:not([href="#"])').click(function() {
-            //         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            //             var target = $(this.hash);
-            //             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            //             if (target.length) {
-            //                 $('html, body').animate({
-            //                     scrollTop: target.offset().top
-            //                 }, 1000);
-            //                 return false;
-            //             }
-            //         }
-            //     });
-            // });
-            $(document).ready(function() {
-                $('a[href^="#"]').on('click', function(e) {
-                    e.preventDefault();
-                    var target = this.hash; // sets var target to the link
-                    var $target = $(target);
-
-                    $('html, body').stop().animate({
-                        'scrollTop': $target.offset().top
-                    }, 1000, 'swing', function() {
-                        window.location.hash = target; //scrolls to the targeted section
-                    });
-                });
-            });
-        </script>
+    <script>
+        $("#menu-toggle").click(function() {
+            // e
+            // e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
 
 </body>
 

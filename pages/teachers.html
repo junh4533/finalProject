@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../universal.css">
     <link rel="stylesheet" href="../topBar.css">
     <link rel="stylesheet" href="../pagesCSS/teachers.css">
+    <script src="../universal.js"></script>
 
     <!--fonts-->
     <link href='https://fonts.googleapis.com/css?family=Exo+2:400,900' rel='stylesheet' type='text/css'>
@@ -36,7 +37,7 @@
                 <li class="sidebar-brand">
                     <a href="../home.html">SEP</a>
                 </li>
-                 <!--Temporary disable-->
+                <!--Temporary disable-->
                 <!--<li>-->
                 <!--    <a href="teachers.html">Teachers</a>-->
                 <!--</li>-->
@@ -66,7 +67,7 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li><a href="../home.html">Home</a></li>
-                     <!--Temporary disable-->
+                    <!--Temporary disable-->
                     <!--<li class="active"><a href="teachers.html">Teachers</a></li>-->
                     <li><a href="env.html">Learning Environment</a></li>
                     <li><a href="topics.html">Topics</a></li>
@@ -77,28 +78,21 @@
             <!-- Page Content -->
             <div class="content">
                 <!--<h2>Meet my teacher, Mr. Mueller!</h2>-->
-                  <h2>Meet my teacher, Mr. Mueller!</h2>
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/2TWpU4uY9cs" frameborder="0" allowfullscreen></iframe>
+                <h2>Meet my teacher, Mr. Mueller!</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2TWpU4uY9cs" frameborder="0" allowfullscreen></iframe>
                 <!--content div-->
             </div>
         </div>
         <!--wrapper div-->
     </div>
+  <script>
+            $("#menu-toggle").click(function() {
+                // e
+                // e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        </script>
 
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-        $("#menu-toggle").click(function() {
-            // e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-    </script>
 
 </body>
 

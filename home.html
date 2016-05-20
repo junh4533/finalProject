@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="homeStyle.css">
     <link rel="stylesheet" href="universal.css">
     <link rel="stylesheet" href="topBar.css">
+    <script src="universal.js"></script>
 
     <!--fonts-->
     <link href='https://fonts.googleapis.com/css?family=Exo+2:400,900' rel='stylesheet' type='text/css'>
@@ -36,7 +37,7 @@
                 <li class="sidebar-brand">
                     <a href="home.html">SEP</a>
                 </li>
-                 <!--Temporary disable-->
+                <!--Temporary disable-->
                 <!--<li>-->
                 <!--    <a href="pages/teachers.html">Teachers</a>-->
                 <!--</li>-->
@@ -66,7 +67,7 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="home.html">Home</a></li>
-                     <!--Temporary disable-->
+                    <!--Temporary disable-->
                     <!--<li><a href="pages/teachers.html">Teachers</a></li>-->
                     <li><a href="pages/env.html">Learning Environment</a></li>
                     <li><a href="pages/topics.html">Topics</a></li>
@@ -138,66 +139,14 @@
         <!--wrapper div-->
     </div>
 
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Menu Toggle Script -->
     <script>
         $("#menu-toggle").click(function() {
+            // e
             // e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         });
-
-        $(document).ready(function() {
-            
-            $(window).scroll(function() {
-                
-                //animation1
-                $(".slideanim").each(function() {
-                    
-                    var pos = $(this).offset().top;
-
-                    var winTop = $(window).scrollTop();
-                    if (pos < winTop + 600) {
-                        $(this).addClass("slideUp");
-                    }
-                   
-                });
-                
-                  //animation2
-                $(".slideanim2").each(function() {
-                    
-                    var pos2 = $(this).offset().top;
-
-                    var winTop = $(window).scrollTop();
-                    if (pos2 < winTop + 600) {
-                        $(this).addClass("slideLeft");
-                    }
-                   
-                });
-                
-                      //animation3
-                $(".slideanim3").each(function() {
-                    
-                    var pos2 = $(this).offset().top;
-
-                    var winTop = $(window).scrollTop();
-                    if (pos2 < winTop + 600) {
-                        $(this).addClass("slideRight");
-                    }
-                   
-                });
-                
-                
-                //window scroll function end
-            });
-            
-        });
     </script>
+    
 </body>
 
 </html>
