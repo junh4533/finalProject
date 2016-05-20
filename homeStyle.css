@@ -131,3 +131,13 @@ p span {
  /*}*/
  }
  
+iframe{
+    width:90vw;
+    height:calc(90vw / 1.77778);
+    position: relative;
+    left:5vw;
+}
+
+.vidFrame{
+    color:#E6E6E6;
+}
