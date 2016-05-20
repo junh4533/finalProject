@@ -232,46 +232,46 @@
                         <div class="col-xs-4 con">
                             <h2>Content</h2>
 
-                            <p>The contnt is the core of your website!</p>
-                            <p>The content is manipulated using a markup language known as <strong>HTML</strong> (Hyper Text Markup language).</p>
+                            <p class="slideanim">The contnt is the core of your website!</p>
+                            <p class="slideanim">The content is manipulated using a markup language known as <strong>HTML</strong> (Hyper Text Markup language).</p>
                             <br>
-                            <span class="glyphicon glyphicon-font"> Text</span>
+                            <span class="glyphicon glyphicon-font slideanim"> Text</span>
                             <br>
-                            <span class="glyphicon glyphicon-facetime-video"> Videos</span>
+                            <span class="glyphicon glyphicon-facetime-video slideanim"> Videos</span>
                             <br>
-                            <span class="glyphicon glyphicon-picture"> Images</span>
+                            <span class="glyphicon glyphicon-picture slideanim"> Images</span>
                         </div>
 
                         <div class="col-xs-4 design">
                             <h2>Design</h2>
-                            <p>This is what makes your website look appealing to the audience.</p>
-                            <p>It involves a styling language known as <strong>CSS</strong> (Cascading style sheets).</p>
-                            <p>Things you can do with CSS:</p>
-                            <ul>
+                            <p class="slideanim">This is what makes your website look appealing to the audience.</p>
+                            <p class="slideanim">It involves a styling language known as <strong>CSS</strong> (Cascading style sheets).</p>
+                            <p class="slideanim">Things you can do with CSS:</p>
+                            <ul class="slideanim">
                                 <li>position elements</li>
                                 <li>adjust colors</li>
                                 <li>Change text options (size,fonts, etc)</li>
                             </ul>
 
                             <h4>Bootstrap</h4>
-                            <p>There is a framework known as Bootstrap, a set of pre-programmed CSS file that contains almost all positioning and styling. </p>
-                            <p>It is very popular for novice programmers due to its ease and flexibility.</p>
-                            <p>Bootstrap offers a responsive CSS design, which provides support for all devices, such as phones, tablets, computers, and more.</p>
+                            <p class="slideanim">There is a framework known as Bootstrap, a set of pre-programmed CSS file that contains almost all positioning and styling. </p>
+                            <p class="slideanim">It is very popular for novice programmers due to its ease and flexibility.</p>
+                            <p class="slideanim">Bootstrap offers a responsive CSS design, which provides support for all devices, such as phones, tablets, computers, and more.</p>
                         </div>
 
                         <div class="col-xs-4 interactivity">
                             <h2>Interactivity</h2>
-                            <p>In terms of difficulty, this is probably the most difficult part of web design.</p>
+                            <p class="slideanim">In terms of difficulty, this is probably the most difficult part of web design.</p>
                             <div class="row">
-                                <div class="col-md-12 col-lg-6">
+                                <div class="col-md-12 col-lg-6" class="slideanim">
                                     Benefits:
                                 </div>
-                                <div class="col-md-12 col-lg-6">
+                                <div class="col-md-12 col-lg-6" class="slideanim">
                                     Downsides:
                                 </div>
                             </div>
                             <p>Coding languages:</p>
-                            <ul>
+                            <ul class="slideanim">
                                 <li><strong>jQuery (javascript)</strong></li>
                                 <li><strong>CSS3 animations/transitions </strong></li>
                             </ul>
@@ -313,7 +313,22 @@
                 });
             });
         </script>
-
+<!-- slide in -->
+ 
+<script>
+     $(document).ready(function(){     
+ $(window).scroll(function() {
+  $(".slideanim").each(function(){
+     var pos = $(this).offset().top;
+    
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+$(this).addClass("slide");
+  }
+ });
+ });
+});
+</script>
 </body>
 
 </html>
