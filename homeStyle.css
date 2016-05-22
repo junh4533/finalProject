@@ -128,7 +128,7 @@ p span {
  }
   .placement-right{
   
- width:90vw;
+    width:90vw;
     position: relative;
     right:1.7vw;
   }
