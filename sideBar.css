@@ -45,7 +45,9 @@
 #wrapper.toggled .content {
     position: absolute;
     margin-right: -200px;
+    transition: all 0.5s ease;
 }
+
 
 /*blur screen when sidebar is opened*/
 
@@ -55,6 +57,7 @@
     background-color: rgba(0, 25, 75, .7);
     background-blend-mode: multiply;
 }
+
 
 /*sidebar CSS*/
 
@@ -103,5 +106,3 @@
 li {
     text-decoration: none;
 }
-
-

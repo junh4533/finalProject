@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="homeStyle.css">
     <link rel="stylesheet" href="universal.css">
     <link rel="stylesheet" href="topBar.css">
+    <script src="universal.js"></script>
 
     <!--fonts-->
     <link href='https://fonts.googleapis.com/css?family=Exo+2:400,900' rel='stylesheet' type='text/css'>
@@ -31,14 +32,15 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper" class="navStyle">
+        <div id="sidebar-wrapper" class="navStyle placement">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="home.html">SEP</a>
                 </li>
-                <li>
-                    <a href="pages/teachers.html">Teachers</a>
-                </li>
+                <!--Temporary disable-->
+                <!--<li>-->
+                <!--    <a href="pages/teachers.html">Teachers</a>-->
+                <!--</li>-->
                 <li>
                     <a href="pages/env.html">Learning Environment</a>
                 </li>
@@ -65,7 +67,8 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="home.html">Home</a></li>
-                    <li><a href="pages/teachers.html">Teachers</a></li>
+                    <!--Temporary disable-->
+                    <!--<li><a href="pages/teachers.html">Teachers</a></li>-->
                     <li><a href="pages/env.html">Learning Environment</a></li>
                     <li><a href="pages/topics.html">Topics</a></li>
                     <li><a href="pages/projects.html">Projects</a></li>
@@ -89,31 +92,28 @@
                 </div>
                 <h1 class="title">Welcome to SEP</h1>
                 <div id="diffColor2" class="row">
-                   
-                        <div class="homeContent introContent col-sm-4 container Cent">
-                            <h2 class="subtitle InText SMhead2"> Introduction </h2>
-                            <p class="introText InText slideanim">
-                                Welcome to the SEP website. Here you will find all information about our program. 
-                                Our goal is for students to learn about all kinds of ways to be well ready for a job in a field
-                                that requires computer science
-                                We want these students to have a career in software as there are many
-                                seats that are unfilled and the demand for software developers are increasing.
-                            </p>
-                            <!--home content div-->
-                        </div>
-                   
-                    <div class="homeContent introContent col-sm-8 container ">
-                        <img class="img-responsive Cent ImageIn slideanim" src="images/StudentSEP.JPG" width="800px" height="400px">
+
+                    <div class="homeContent introContent col-sm-4 container Cent">
+                        <h2 class="subtitle InText SMhead2"> Introduction </h2>
+                        <p class="introText InText slideanim placement-right">
+                            Welcome to the SEP website. Here you will find all information about our program. Our goal is for students to learn about all kinds of ways to be well ready for a job in a field that requires computer science We want these students to have a career in
+                            software as there are many seats that are unfilled and the demand for software developers are increasing.
+                        </p>
+                        <!--home content div-->
+                    </div>
+
+                    <div class="homeContent introContent col-sm-8 container placement">
+                        <img class="img-responsive Cent ImageIn slideanim " src="images/StudentSEP.JPG" width="800px" height="400px">
                     </div>
                 </div>
-                
+
                 <div class="row">
-                <div class="homeContent introContent col-sm-8 container ">
+                <div class="homeContent introContent col-sm-8 container placement">
                     <img class="img-responsive Cent ImageIn slideanim" src="images/SEPGreen.JPG" width="800px" height="400px">
                 </div>
                 <div class="homeContent introContent col-sm-4 container Cent">
                     <h2 class="subtitle SMhead2">What is SEP?</h2>
-                    <p class="introText slideanim ImageIn">SEP is a computer science program established by NYC to 
+                    <p class="introText slideanim ImageIn placement-right">SEP is a computer science program established by NYC to 
                         have students become familiar with many concepts in the field of software engineering such as HTML, CSS, and JavaScript. 
                         The more students become educated in the field in computer science, 
                         the more they are able to land a job in that career. In order for students to become knowledgeable of software engineering,
@@ -122,17 +122,19 @@
                 </div>
                 </div>
                 <div class="row" id="diffColor2">
-                <div class="homeContent introContent col-sm-4 container Cent">
-                    <h2 class="subtitle InText SMhead2">How to join HSTAT SEP as a student</h2>
-                    <p class="introText InText slideanim">
-                        If you want to join SEP at HSTAT, you want to make sure that
-                        you have the readiness to learn new and challenging things.
-                        We do not accept anyone who refuses to work.
-                    </p>
+                    <div class="homeContent introContent col-sm-4 container Cent placement-right">
+                        <h2 class="subtitle InText SMhead2">How to join HSTAT SEP as a student</h2>
+                        <p class="introText InText slideanim">
+                            If you want to join SEP at HSTAT, you want to make sure that you have the readiness to learn new and challenging things. We do not accept anyone who refuses to work.
+                        </p>
+                    </div>
+                    <div class="homeContent introContent col-sm-8 container placement">
+                        <img class="img-responsive Cent ImageIn slideanim" src="images/SEPShowcase.JPG" width="800px" height="400px">
+                    </div>
                 </div>
-                <div class="homeContent introContent col-sm-8 container">
-                    <img class="img-responsive Cent ImageIn slideanim" src="images/SEPShowcase.JPG" width="800px" height="400px">
-                </div>
+                <br>
+                <div class="vidFrame slideanim3">
+                    <iframe src="https://www.youtube.com/embed/2TWpU4uY9cs" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <!--content div-->
             </div>
@@ -140,20 +142,12 @@
         <!--wrapper div-->
     </div>
 
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Menu Toggle Script -->
     <script>
         $("#menu-toggle").click(function() {
+            // e
             // e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         });
-
  $(document).ready(function(){     
  $(window).scroll(function() {
   $(".slideanim").each(function(){
@@ -166,7 +160,8 @@ $(this).addClass("slide");
  });
  });
 });
-</script>
+    </script>
+    
 </body>
 
 </html>

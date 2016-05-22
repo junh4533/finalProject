@@ -15,10 +15,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <!--custom CSS-->
+
     <link rel="stylesheet" href="../sideBar.css">
     <link rel="stylesheet" href="../pagesCSS/topics.css">
     <link rel="stylesheet" href="../universal.css">
+    <link rel="stylesheet" href="../pagesCSS/topics.css">
     <link rel="stylesheet" href="../topBar.css">
+    <script src="../universal.js"></script>
 
     <!--fonts-->
     <link href='https://fonts.googleapis.com/css?family=Exo+2:400,900' rel='stylesheet' type='text/css'>
@@ -36,9 +39,10 @@
                 <li class="sidebar-brand">
                     <a href="../home.html">SEP</a>
                 </li>
-                <li>
-                    <a href="teachers.html">Teachers</a>
-                </li>
+                <!--Temporary disable-->
+                <!--<li>-->
+                <!--    <a href="teachers.html">Teachers</a>-->
+                <!--</li>-->
                 <li>
                     <a href="env.html">Learning Environment</a>
                 </li>
@@ -65,7 +69,8 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li><a href="../home.html">Home</a></li>
-                    <li><a href="teachers.html">Teachers</a></li>
+                    <!--Temporary disable-->
+                    <!--<li><a href="teachers.html">Teachers</a></li>-->
                     <li><a href="env.html">Learning Environment</a></li>
                     <li class="active"><a href="topics.html">Topics</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -103,11 +108,11 @@
                                 <div class="flipBox">
                                     <div class="flip">
                                         <div class="front">
-                                            <!--imgLeft -->
+
                                             <img class="images img-thumbnail size" src="../images/scratchGame.png">
                                         </div>
                                         <div class="back">
-                                            <!--imgRight -->
+
                                             <img class="images img-thumbnail size" src="../images/scratchCode.png">
                                         </div>
                                     </div>
@@ -117,12 +122,8 @@
 
                         <a class="circleCrop2" href="#sectionRobotics">
                             <span> </span>
-                            <br><span> </span>
                         </a>
 
-                        <!--<a class="arrow-wrap" href="#sectionRobotics">-->
-                        <!--    <span class="arrow"></span>-->
-                        <!--</a>-->
 
                     </div>
 
@@ -146,7 +147,6 @@
 
                         <a class="circleCrop2" href="#sectionProcessing">
                             <span> </span>
-                            <br><span> </span>
                         </a>
 
                     </div>
@@ -163,7 +163,7 @@
                                 <div class="flipBox">
                                     <div class="flip">
                                         <div class="front">
-                                            <img class="images img-thumbnail size" src="../images/processing.png">
+                                            <img class="images circleCrop img-thumbnail size" src="../images/processing.png">
                                         </div>
                                         <div class="back">
                                             <img class="images img-thumbnail size" src="../images/proCode.png">
@@ -171,7 +171,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-xs-12 col-sm-6" id="processingText">
                                 <p>A software designed to help to the user learn and create computer generated artworks using Java.</p>
                             </div>
@@ -179,7 +179,6 @@
 
                         <a class="circleCrop2" href="#sectionData">
                             <span> </span>
-                            <br><span> </span>
                         </a>
                     </div>
 
@@ -191,7 +190,6 @@
                         <p>Google spreadsheets is a powerful tool for both organizing and presenting data. By inserting formulas into different cells, you can manipulate the color as well as the color presented in each cell. </p>
                         <a class="circleCrop2" href="#sectionGithub">
                             <span> </span>
-                            <br><span> </span>
                         </a>
                     </div>
 
@@ -221,18 +219,14 @@
                         </div>
                         <a class="circleCrop2" href="#sectionWeb">
                             <span> </span>
-                            <br><span> </span>
                         </a>
                     </div>
 
-
-
-
                     <div class="row web sections" id="sectionWeb">
-                        <div class="col-xs-4 con">
+                        <div class="col-xs-12 col-sm-4 con slideanim3">
                             <h2>Content</h2>
 
-                            <p class="slideanim">The contnt is the core of your website!</p>
+                            <p class="slideanim">The content is the core of your website!</p>
                             <p class="slideanim">The content is manipulated using a markup language known as <strong>HTML</strong> (Hyper Text Markup language).</p>
                             <br>
                             <span class="glyphicon glyphicon-font slideanim"> Text</span>
@@ -242,34 +236,30 @@
                             <span class="glyphicon glyphicon-picture slideanim"> Images</span>
                         </div>
 
-                        <div class="col-xs-4 design">
+                        <div class="col-xs-12 col-sm-4 design slideanim">
                             <h2>Design</h2>
-                            <p class="slideanim">This is what makes your website look appealing to the audience.</p>
-                            <p class="slideanim">It involves a styling language known as <strong>CSS</strong> (Cascading style sheets).</p>
-                            <p class="slideanim">Things you can do with CSS:</p>
-                            <ul class="slideanim">
-                                <li>position elements</li>
-                                <li>adjust colors</li>
-                                <li>Change text options (size,fonts, etc)</li>
+                            
+                            <p>This is what makes your website look appealing to the audience.</p>
+                            <p>You can:</p>
+                            <ul>
+                                <li>Position elements</li>
+                                <li>Adjust colors</li>
+                                <li>Change text options (size, fonts, etc)</li>
                             </ul>
 
-                            <h4>Bootstrap</h4>
-                            <p class="slideanim">There is a framework known as Bootstrap, a set of pre-programmed CSS file that contains almost all positioning and styling. </p>
-                            <p class="slideanim">It is very popular for novice programmers due to its ease and flexibility.</p>
-                            <p class="slideanim">Bootstrap offers a responsive CSS design, which provides support for all devices, such as phones, tablets, computers, and more.</p>
+                            <h4><strong>Bootstrap</strong></h4>
+                            <p>There is a framework known as Bootstrap, a set of pre-programmed CSS code that contains almost all positioning and styling.</p>
+                            <br>
+                            <span class="glyphicon glyphicon-globe"></span>
+                            <p>Bootstrap offers a responsive CSS design, which provides support for a variety of devices.</p>
+                            <br>
+                            <p>Highly recommnded for novice programmers due to its ease and flexibility.</p>
                         </div>
 
-                        <div class="col-xs-4 interactivity">
+                        <div class="col-xs-12 col-sm-4 interactivity slideanim2">
                             <h2>Interactivity</h2>
-                            <p class="slideanim">In terms of difficulty, this is probably the most difficult part of web design.</p>
-                            <div class="row">
-                                <div class="col-md-12 col-lg-6" class="slideanim">
-                                    Benefits:
-                                </div>
-                                <div class="col-md-12 col-lg-6" class="slideanim">
-                                    Downsides:
-                                </div>
-                            </div>
+                            <p>In terms of difficulty, this is probably the most difficult part of web design.</p>
+                            <p>This includes all the animations that are used in your website.</p>
                             <p>Coding languages:</p>
                             <ul class="slideanim">
                                 <li><strong>jQuery (javascript)</strong></li>
@@ -286,6 +276,7 @@
         </div>
 
 
+    </div>
 
         <!-- Menu Toggle Script -->
         <script>
