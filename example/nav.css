@@ -1,0 +1,21 @@
+.navbar-inverse { background-color: #007FDA}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #007FDA}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #007FDA}
+.dropdown-menu { background-color: #007FDA}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #FFFFFF}
+.navbar-inverse { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar-inverse { border-color: #007FDA}
+.navbar-inverse .navbar-brand { color: #FFFFFF}
+.navbar-inverse .navbar-brand:hover { color: #007FDA}
+.navbar-inverse .navbar-nav>li>a { color: #c4d7f1}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #0F3FAD}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #007FDA}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #007FDA}
+.dropdown-menu>li>a { color: #007FDA}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #007FDA}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #007FDA}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #007FDA}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #007FDA}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #007FDA}
+
