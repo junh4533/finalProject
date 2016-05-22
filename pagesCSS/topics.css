@@ -27,12 +27,22 @@ body {
     text-align: center;
     background-color: #E6E6E6;
     width: 100vw;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .whiteHeading {
     background-color: #E6E6E6;
+    width: 100vw;
 }
+
+
+/*.col-xs-12{*/
+
+
+/*    width:100vw;*/
+
+
+/*}*/
 
 .cyanHeading {
     background-color: #40e0d0;
@@ -53,7 +63,45 @@ body {
 }
 
 .scratch {
-    height: calc(100vh - 122px);
+    height: calc(100vh - 121px);
+}
+
+
+/*.scratch{*/
+
+
+/*     position: relative;*/
+
+
+/*}*/
+
+@media screen and (min-width: 992px) {
+    #scratchText {
+        top: 35%;
+        transform: translateY(-35%);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #roboticsText {
+        top: -60%;
+        transform: translateY(60%);
+    }
+    
+    #processingText{
+        top: 20vh;
+        /*transform: translateY(-150vh);*/
+    }
+}
+
+@media screen and (min-width: 325px) and (min-height: 570px) {
+.sectionMargin {
+    margin-top: 15vh;
+}
+}
+
+.sectionMargin {
+    margin-top: 5vh;
 }
 
 .robotics,
@@ -96,17 +144,23 @@ body {
 }
 
 #github {
-    width: 420px;
+    width: 350px;
+}
+
+@media screen and (min-height: 425px) and (min-width: 960px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-height: 960px) {
+    body {
+        font-size: 18px;
+    }
 }
 
 
 /*scroll*/
-
-
-/*https://css-tricks.com/snippets/jquery/smooth-scrolling/*/
-
-
-/*http://codepen.io/nxworld/pen/OyRrGy*/
 
 .row a {
     position: absolute;
@@ -129,9 +183,9 @@ body {
     height: 15px;
     border-left: 4px solid white;
     border-bottom: 4px solid white;
-    transform: rotate(315deg);
-    transition-timing-function: ease-in-out;
-    transition: 1.5s;
+     -webkit-transform: rotate(315deg);
+    -webkit-transition-timing-function: ease-in-out;
+     -webkit-transition: 1.5s;
     left: 18px;
     bottom: 20px;
 }
@@ -152,34 +206,31 @@ body {
 }
 
 .circleCrop2:hover span {
-    transform: rotateY(180deg) rotateZ(315deg);
+     -webkit-transform: rotateY(180deg) rotateZ(315deg);
 }
 
 
 /*image flip*/
 
 .flipBox {
-    perspective: 1000px;
+     -webkit-perspective: 1000px;
 }
 
 .flipBox:hover .flip,
 .flipBox.hover .flip {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 .flip {
-    transition: 1s;
-    transform-style: preserve-3d;
+    -webkit-transition: 1s;
+     -webkit-transform-style: preserve-3d;
     position: relative;
 }
 
 .front,
 .back {
-    backface-visibility: hidden;
+     -webkit-backface-visibility: hidden;
     position: absolute;
-    /*top: 0;*/
-    /*left: 0;*/
-    /*margin: auto;*/
 }
 
 .front {
@@ -187,7 +238,7 @@ body {
 }
 
 .back {
-    transform: rotateY(180deg);
+     -webkit-transform: rotateY(180deg);
 }
 
 .flip,
@@ -195,66 +246,32 @@ body {
 .front,
 .back,
 .size {
-    width: 30vw;
-    height: 30vw;
-    /*max-height: 35vw;*/
-    /*max-width: 35vw;*/
+    width: 50vw;
+    height: 50vw;
+    max-width: 50vh;
+    max-height: 50vh;
 }
 
-@media screen and (min-height: 425px) {
-    /*h1 {*/
-    /*    font-size: 30px;*/
-    /*}*/
-    /*h3 {*/
-    /*    font-size: 20px;*/
-    /*}*/
-    /*body {*/
-    /*    font-size: 15px;*/
-    /*}*/
-    /*    .flip,*/
-    /*    .flipBox,*/
-    /*    .front,*/
-    /*    .back,*/
-    /*    .size {*/
-    /*max-height: 200px;*/
-    /*        max-width: 200px;*/
-    /*    }*/
+#scratchImage {
+    margin: auto;
 }
 
-@media screen and (min-width: 768px) {
-    /*h1 {*/
-    /*    font-size: 30px;*/
-    /*}*/
-    /*h3 {*/
-    /*    font-size: 20px;*/
-    /*}*/
-    /*body {*/
-    /*    font-size: 15px;*/
-    /*}*/
-    /*.flip,*/
-    /*.flipBox,*/
-    /*.front,*/
-    /*.back,*/
-    /*.size {*/
-    /*    height: 50vh;*/
-    /*    width: 50vh;*/
-    /*}*/
-}
 
 /*slide animations*/
+
 .slideUp {
     animation-name: slideUp;
     animation-duration: 1.5s;
     visibility: visible;
 }
 
-.slideLeft{
+.slideLeft {
     animation-name: slideLeft;
     animation-duration: 1.5s;
     visibility: visible;
 }
 
-.slideRight{
+.slideRight {
     animation-name: slideRight;
     animation-duration: 1.5s;
     visibility: visible;

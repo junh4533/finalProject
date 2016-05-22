@@ -78,47 +78,35 @@
                 </ul>
             </nav>
             <!-- Page Content -->
-            <div class="content">
+            <div class="content bulletCenter">
 
                 <div class="ninth">
                     <h1 class="cyanHeading">9th Grade Topics</h1>
                     <div class="row scratch sections" id="sectionScratch1">
-                        <div class="sectionMargin">
-                            <!--<div class="col-xs-6 col-sm-4">-->
-                            <!--    <img class="img-responsive imgLeft" src="../images/scratchGame.png">-->
-                            <!--</div>-->
-
-                            <!--<div class="col-xs-6 col-sm-4 col-sm-push-4">-->
-                            <!--    <img class="img-responsive imgRight" src="../images/scratchCode.png">-->
-                            <!--</div>-->
-
-                            <!--col-xs-12 col-sm-4 col-sm-pull-4-->
-                            <h3>Scratch</h3>
-                            <div class="col-xs-6" id="scratchText">
-
-                                <p>Coding platform that utilizes an user- friendly interface, perfect for beginners.</p>
-                                <ul>
-                                    <li>Simple click and drag system</li>
-                                    <li>No spelling mistakes!</li>
-                                    <li>Lays the foundation for logical reasoning</li>
-                                    <li>Enables the user to think creatively</li>
-                                </ul>
-                            </div>
-                            <div class="col-xs-6 ">
-                                <div class="flipBox">
-                                    <div class="flip">
-                                        <div class="front">
-
-                                            <img class="images img-thumbnail size" src="../images/scratchGame.png">
-                                        </div>
-                                        <div class="back">
-
-                                            <img class="images img-thumbnail size" src="../images/scratchCode.png">
-                                        </div>
+                        <!--<div class="sectionMargin">-->
+                        <h3>Scratch</h3>
+                        <div class="col-xs-12 col-md-6" id="scratchText">
+                            <p>Coding platform that utilizes an user- friendly interface, perfect for beginners.</p>
+                            <ul>
+                                <li>Simple click and drag system</li>
+                                <li>No spelling mistakes!</li>
+                                <li>Lays the foundation for logical reasoning</li>
+                                <li>Enables the user to think creatively</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="flipBox" id="scratchImage">
+                                <div class="flip">
+                                    <div class="front">
+                                        <img class="images img-thumbnail size" src="../images/scratchGame.png">
+                                    </div>
+                                    <div class="back">
+                                        <img class="images img-thumbnail size" src="../images/scratchCode.png">
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!--</div>-->
 
                         <a class="circleCrop2" href="#sectionRobotics">
                             <span> </span>
@@ -129,13 +117,14 @@
 
                     <div class="row robotics sections" id="sectionRobotics">
                         <div class="sectionMargin">
-                            <div class="col-xs-9">
+                            <h3>Robotics</h3>
+                            <div class="col-xs-12 col-sm-6">
                                 <img id="img" class="img-thumbnail circleCrop" src="../images/robotics.jpg">
                                 <p>You'll be using Lego Robots </p>
 
                             </div>
 
-                            <div class="col-xs-3">
+                            <div class="col-xs-12 col-sm-6" id="roboticsText">
                                 <p>Robotics</p>
                                 <ul>
                                     <li>Similar to scratch, easy to learn</li>
@@ -143,12 +132,12 @@
                                     <li>Interactive robot that can be controlled through basic pogramming</li>
                                 </ul>
                             </div>
+
+
+                            <a class="circleCrop2" href="#sectionProcessing">
+                                <span> </span>
+                            </a>
                         </div>
-
-                        <a class="circleCrop2" href="#sectionProcessing">
-                            <span> </span>
-                        </a>
-
                     </div>
 
                 </div>
@@ -158,7 +147,7 @@
                     <div class="row processing sections" id="sectionProcessing">
                         <h1 class="whiteHeading">10th Grade Topics</h1>
                         <div class="sectionMargin">
-                            <h3>Processing</h3>
+                            <h3 class="whiteText">Processing</h3>
                             <div class="col-xs-12 col-sm-6">
                                 <div class="flipBox">
                                     <div class="flip">
@@ -183,6 +172,7 @@
                     </div>
 
                     <div class="row data sections" id="sectionData">
+                        <div class="sectionMargin">
                         <h3>Data</h3>
                         <img class="images img-thumbnail" src="../images/data.png" id="data">
                         <br>
@@ -191,6 +181,7 @@
                         <a class="circleCrop2" href="#sectionGithub">
                             <span> </span>
                         </a>
+                        </div>
                     </div>
 
                 </div>
@@ -203,10 +194,10 @@
                         <div class="sectionMargin">
                             <h3>Github</h3>
 
-                            <div class="col-xs-6">
+                            <div class="col-xs-12 col-sm-6">
                                 <img class="img-responsive" src="../images/github.png" id="github">
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-xs-12 col-sm-6">
                                 <p>Github is an online hosting service that allows its users to share, collaborate, and remix projects. </p>
                                 <br>
                                 <h4>Benefits of Github</h4>
@@ -216,10 +207,11 @@
                                     <li>Can view/request edits for other people's projects</li>
                                 </ul>
                             </div>
-                        </div>
+                        
                         <a class="circleCrop2" href="#sectionWeb">
                             <span> </span>
                         </a>
+                        </div>
                     </div>
 
                     <div class="row web sections" id="sectionWeb">
@@ -245,7 +237,6 @@
                                 <li>Adjust colors</li>
                                 <li>Change text options (size, fonts, etc)</li>
                             </ul>
-
                             <h4><strong>Bootstrap</strong></h4>
                             <p>There is a framework known as Bootstrap, a set of pre-programmed CSS code that contains almost all positioning and styling.</p>
                             <br>

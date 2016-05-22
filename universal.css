@@ -20,6 +20,11 @@ p span {
     display: block;
 }
 
+.row{
+padding-right:50px;
+    
+}
+
 /*video*/
 
 .vidContainer {
@@ -91,6 +96,10 @@ p span {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.bulletCenter {
+    list-style-position: inside;
 }
 
 @media only screen and (max-width: 768px) {
