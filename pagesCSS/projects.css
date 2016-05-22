@@ -79,3 +79,9 @@
     opacity: 1;
     background-color: rgba(18, 66, 63, 0.7);
 }
+
+#roboticsVid{
+    width:90%;
+    margin-left:15%;
+    margin-top: 10%
+}

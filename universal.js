@@ -1,7 +1,6 @@
-
 $(document).ready(function() {
 
-//slide animations
+    //slide animations
     $(window).scroll(function() {
 
         //animation1
@@ -10,7 +9,7 @@ $(document).ready(function() {
             var pos = $(this).offset().top;
 
             var winTop = $(window).scrollTop();
-            if (pos < winTop + 500) {
+            if (pos < winTop + 600) {
                 $(this).addClass("slideUp");
             }
 
@@ -57,5 +56,10 @@ $(document).ready(function() {
         });
     });
 
+    // $('.circleCrop2').click(function() {
+    //     $('.sections a span').rotate({
+    //         endDeg: 135
+    //     })
+    // });
 
 });
