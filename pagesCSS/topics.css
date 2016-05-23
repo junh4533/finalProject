@@ -160,6 +160,9 @@ img {
     p {
         font-size: 18px;
     }
+    .nav li{
+        font-size:15px;
+    }
 }
 
 @media screen and (min-height: 700px) {
@@ -179,6 +182,9 @@ img {
     p {
         font-size: 20px;
     }
+     .nav li{
+        font-size:15px;
+    }
 }
 
 @media screen and (min-height: 900px) and (min-width: 1080px) {
@@ -197,6 +203,9 @@ img {
     ul,
     p {
         font-size: 30px;
+    }
+     .nav li{
+        font-size:15px;
     }
 }
 
