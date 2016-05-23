@@ -6,6 +6,11 @@ p {
 
 body {
     font-family: 'Raleway', sans-serif;
+    
+}
+
+.content{
+    list-style-position: inside;
 }
 
 h1 {
@@ -20,10 +25,10 @@ p span {
     display: block;
 }
 
-.row{
-padding-right:50px;
-    
+.row {
+    padding-right: 50px;
 }
+
 
 /*video*/
 
@@ -59,6 +64,7 @@ padding-right:50px;
     font-size: 8vw;
     font-weight: 700;
 }
+
 
 /*homepage content css*/
 
@@ -102,7 +108,7 @@ padding-right:50px;
     list-style-position: inside;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (max-width: 992px) {
     .introText {
         font-size: 14px;
     }
@@ -114,7 +120,9 @@ padding-right:50px;
 
 /*slide animations*/
 
-.slideanim, .slideanim2, .slideanim3 {
+.slideanim,
+.slideanim2,
+.slideanim3 {
     visibility: hidden;
 }
 
@@ -124,13 +132,13 @@ padding-right:50px;
     visibility: visible;
 }
 
-.slideLeft{
+.slideLeft {
     -webkit-animation-name: slideLeft;
     -webkit-animation-duration: 1s;
     visibility: visible;
 }
 
-.slideRight{
+.slideRight {
     -webkit-animation-name: slideRight;
     -webkit-animation-duration: 1s;
     visibility: visible;
@@ -168,4 +176,3 @@ padding-right:50px;
         -webkit-transform: translateY(0%);
     }
 }
-

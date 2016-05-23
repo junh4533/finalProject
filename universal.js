@@ -9,7 +9,7 @@ $(document).ready(function() {
             var pos = $(this).offset().top;
 
             var winTop = $(window).scrollTop();
-            if (pos < winTop + 600) {
+            if (pos < winTop + 500) {
                 $(this).addClass("slideUp");
             }
 
@@ -30,10 +30,10 @@ $(document).ready(function() {
         //animation3
         $(".slideanim3").each(function() {
 
-            var pos2 = $(this).offset().top;
+            var pos3 = $(this).offset().top;
 
             var winTop = $(window).scrollTop();
-            if (pos2 < winTop + 500) {
+            if (pos3 < winTop + 500) {
                 $(this).addClass("slideRight");
             }
 
@@ -49,17 +49,12 @@ $(document).ready(function() {
         var target = this.hash; // sets var target to the link
         var $target = $(target);
 
-        $('html, body').stop().animate({
+        $('body').stop().animate({
             'scrollTop': $target.offset().top
         }, 1000, 'swing', function() {
             window.location.hash = target; //scrolls to the targeted section
         });
     });
 
-    // $('.circleCrop2').click(function() {
-    //     $('.sections a span').rotate({
-    //         endDeg: 135
-    //     })
-    // });
 
 });

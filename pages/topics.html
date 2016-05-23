@@ -56,7 +56,7 @@
         </div>
         <!-- /#sidebar-wrapper -->
         <div id="display">
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default" id="navTop">
                 <button type="button" class="navbar-toggle" id="menu-toggle">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -125,7 +125,8 @@
                             </div>
 
                             <div class="col-xs-12 col-sm-6" id="roboticsText">
-                                <p>Robotics</p>
+                                <p>Robotics is both an enjoyable and interactive way to introduce new students into software engineering.</p>
+                                <br>
                                 <ul>
                                     <li>Similar to scratch, easy to learn</li>
                                     <li>Friendly interface</li>
@@ -133,7 +134,7 @@
                                 </ul>
                             </div>
 
-                            <a class="circleCrop2 slideanim" href="#sectionProcessing">
+                            <a class="circleCrop2 slideanimUp" href="#sectionProcessing">
                                 <span> </span>
                             </a>
                         </div>
@@ -143,7 +144,7 @@
 
                 <div class="tenth">
 
-                    <div class="row processing sections " id="sectionProcessing">
+                    <div class="row processing sections" id="sectionProcessing">
                         <h1 class="whiteHeading">10th Grade Topics</h1>
                         <div class="sectionMargin slideanim2">
                             <h3 class="whiteText">Processing</h3>
@@ -161,11 +162,17 @@
                             </div>
 
                             <div class="col-xs-12 col-sm-6" id="processingText">
-                                <p>A software designed to help to the user learn and create computer generated artworks using Java.</p>
+                                <p>A software designed to help to the user acquire critical thinking skills and create computer generated artworks using Java.</p>
+                                <p>Compared to scratch, processing is much harder</p>
+                                <ul>
+                                    <li>Requires critical thinking skills</li>
+                                    <li>Requires accurate syntax and spelling</li>
+                                </ul>
+
                             </div>
                         </div>
 
-                        <a class="circleCrop2 slideanim" href="#sectionData">
+                        <a class="circleCrop2 slideanimUp" href="#sectionData">
                             <span> </span>
                         </a>
                     </div>
@@ -176,12 +183,12 @@
                             <img class="images img-thumbnail" src="../images/data.png" id="data">
                             <br>
                             <br>
-                            <p>Google spreadsheets is a powerful tool for both organizing and presenting data. By inserting formulas into different cells, you can manipulate the color as well as the color presented in each cell. </p>
-                         
+                            <p>Google spreadsheets is a powerful tool for both organizing and presenting data. By inserting formulas into different cells, you can clearly indicate the conclusion of your data.</p>
+
                         </div>
-                           <a class="circleCrop2 slideanim" href="#sectionGithub">
-                                <span> </span>
-                            </a>
+                        <a class="circleCrop2 slideanimUp" href="#sectionGithub">
+                            <span> </span>
+                        </a>
                     </div>
 
                 </div>
@@ -195,7 +202,7 @@
                             <h3>Github</h3>
 
                             <div class="col-xs-12 col-sm-6">
-                                <img class="img-responsive" src="../images/github.png" id="github">
+                                <img src="../images/github.png" id="github">
                             </div>
                             <div class="col-xs-12 col-sm-6">
                                 <p>Github is an online hosting service that allows its users to share, collaborate, and remix projects. </p>
@@ -210,7 +217,7 @@
 
 
                         </div>
-                        <a class="circleCrop2 slideanim" href="#sectionWeb">
+                        <a class="circleCrop2 slideanimUp" href="#sectionWeb">
                             <span> </span>
                         </a>
                     </div>
@@ -219,18 +226,19 @@
                         <div class="col-xs-12 col-sm-4 con slideanim3">
                             <h2>Content</h2>
 
-                            <p>The contnt is the core of your website!</p>
-                            <p>The content is manipulated using a markup language known as <strong>HTML</strong> (Hyper Text Markup language).</p>
+                            <p class="slideanimUp">The content is the core of your website!</p>
+                            <p class="slideanimUp">The content is manipulated using a markup language known as <strong>HTML</strong> (Hyper Text Markup language).</p>
                             <br>
-                            <span class="glyphicon glyphicon-font"> Text</span>
+                            <span class="glyphicon glyphicon-font slideanimUp"> Text</span>
                             <br>
-                            <span class="glyphicon glyphicon-facetime-video"> Videos</span>
+                            <span class="glyphicon glyphicon-facetime-video slideanimUp"> Videos</span>
                             <br>
-                            <span class="glyphicon glyphicon-picture"> Images</span>
+                            <span class="glyphicon glyphicon-picture slideanimUp"> Images</span>
                         </div>
 
                         <div class="col-xs-12 col-sm-4 design slideanim">
                             <h2>Design</h2>
+
                             <p>This is what makes your website look appealing to the audience.</p>
                             <p>You can:</p>
                             <ul>
@@ -244,8 +252,7 @@
                             <span class="glyphicon glyphicon-globe"></span>
                             <p>Bootstrap offers a responsive CSS design, which provides support for a variety of devices.</p>
                             <br>
-                            <p>Highly recommnded for novice programmers due to its ease and flexibility.</p>
-
+                            <p>Highly recommended for novice programmers due to its ease and flexibility.</p>
                         </div>
 
                         <div class="col-xs-12 col-sm-4 interactivity slideanim2">
@@ -253,12 +260,15 @@
                             <p>In terms of difficulty, this is probably the most difficult part of web design.</p>
                             <p>This includes all the animations that are used in your website.</p>
                             <p>Coding languages:</p>
-                            <ul>
+                            <ul class="slideanimUp">
                                 <li><strong>jQuery (javascript)</strong></li>
                                 <li><strong>CSS3 animations/transitions </strong></li>
                             </ul>
-
+                            <a class="circleCrop2 slideanimUp sectionTop" href="#navTop">
+                                <span> </span>
+                            </a>
                         </div>
+
                     </div>
 
                 </div>
@@ -270,14 +280,36 @@
 
     </div>
 
+    <!-- Menu Toggle Script -->
     <script>
         $("#menu-toggle").click(function() {
-            // e
             // e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         });
     </script>
 
+    <script>
+        $(document).ready(function() {
+
+            //slide animations
+            $(window).scroll(function() {
+
+                //animation1
+                $(".slideanimUp").each(function() {
+
+                    var pos4 = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos4 < winTop + 1500) {
+                        $(this).addClass("slideUp");
+                    }
+
+                });
+                //window scroll function end
+            });
+
+        });
+    </script>
 </body>
 
 </html>

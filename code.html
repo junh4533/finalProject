@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Code</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            padding-top: 50px;
+        }
+        .navbar-fixed-top {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <ul class="nav nav-tabs navbar-fixed-top">
+            <li class="active"><a href="#home">home.html</a></li>
+            <li><a href="#homestyle">homestyle.css</a></li>
+            <li><a href="#universal">universal.css</a></li>
+            <li><a href="#sideBar">sideBar.css</a></li>
+            <li><a href="#topBar">topBar.css</a></li>
+            <li><a href="#env">env.html</a></li>
+            <li><a href="#envcss">env.css</a></li>
+            <li><a href="#topics">topics.html</a></li>
+            <li><a href="#topicscss">topics.css</a></li>
+            <li><a href="#projects">projects.html</a></li>
+            <li><a href="#projectscss">projects.css</a></li>
+        </ul>
+
+<!-- 
+URL structure:
+https://gist-it.appspot.com/github/OWNERS-USERNAME/REPO-NAME/raw/master/PATH/TO/FILE?footer=0
+
+EXAMPLE: 
+https://gist-it.appspot.com/github/bmuellerhstat/shabr/raw/master/index.html?footer=0
+-->
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <script src="https://gist-it.appspot.com/github/junh4533/finalProject/raw/master/home.html?footer=0"></script>
+            </div>
+             <div id="homestyle" class="tab-pane fade in active">
+                <script src="https://gist-it.appspot.com/github/junh4533/finalProject/raw/master/homeStyle.css?footer=0"></script>
+            </div>
+             <div id="universal" class="tab-pane fade in active">
+                <script src="https://gist-it.appspot.com/github/junh4533/finalProject/raw/master/universal.css?footer=0"></script>
+            </div>
+             <div id="sideBar" class="tab-pane fade in active">
+                <script src="https://gist-it.appspot.com/github/junh4533/finalProject/raw/master/sideBar.css?footer=0"></script>
+            </div>
+             <div id="topBar" class="tab-pane fade in active">
+                <script src="https://gist-it.appspot.com/github/junh4533/finalProject/raw/master/topBar.css?footer=0"></script>
+            </div>
+            <div id="env" class="tab-pane fade">
+                <script src="https://gist-it.appspot.com/github/junh4533/finalProject/raw/master/pages/env.html?footer=0"></script>
+            </div>
+             <div id="envcss" class="tab-pane fade in active">
+                <script src="https://gist-it.appspot.com/github/junh4533/finalProject/raw/master/pagesCSS/env.css?footer=0"></script>
+            </div>
+            <div id="topics" class="tab-pane fade">
+                <script src="https://gist-it.appspot.com/github/junh4533/finalProject/raw/master/pages/topics.html?footer=0"></script>
+            </div>
+            <div id="topicscss" class="tab-pane fade in active">
+            <script src="https://gist-it.appspot.com/github/junh4533/finalProject/raw/master/pagesCSS/topics.css?footer=0"></script>
+            </div>
+            <div id="projects" class="tab-pane fade">
+                <script src="https://gist-it.appspot.com/github/junh4533/finalProject/raw/master/pages/projects.html?footer=0"></script>
+            </div>
+              <div id="projectscss" class="tab-pane fade in active">
+                <script src="https://gist-it.appspot.com/github/junh4533/finalProject/raw/master/pagesCSS/projects.css?footer=0"></script>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $(".nav-tabs a").click(function() {
+                $(this).tab('show');
+            });
+            $('.nav-tabs a').on('shown.bs.tab', function(event) {
+                var x = $(event.target).text(); // active tab
+                var y = $(event.relatedTarget).text(); // previous tab
+                $(".act span").text(x);
+                $(".prev span").text(y);
+            });
+            
+            // custom code font-size (uncomment below to see effect)
+            // $('pre').css('font-size','16px');
+        });
+    </script>
+
+</body>
+
+</html>
