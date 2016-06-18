@@ -137,10 +137,10 @@ p span {
 }
 
 iframe {
-    width: 90vw;
-    height: calc(90vw / 1.77778);
-    position: relative;
-    left: 5vw;
+    /*width: 90vw;*/
+    /*height: calc(90vw / 1.77778);*/
+    /*position: relative;*/
+    /*left: 5vw;*/
 }
 
 .vidFrame {

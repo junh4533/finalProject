@@ -30,12 +30,21 @@ body {
     font-size: 13px;
 }
 
-img {
-    margin: auto;
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.sectionWeb {
-    height: 100vh;
+hr.a {
+    border-top: 3px double #E6E6E6;
+    width: 80%;
+}
+
+hr.b {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 15px 15px -15px black inset;
+    width: 100%;
 }
 
 .whiteHeading {
@@ -59,34 +68,6 @@ img {
     width: 100%;
     margin-right: 0;
     margin-left: 0;
-}
-
-.scratch {
-    height: calc(100vh - 121px);
-}
-
-@media screen and (min-width: 992px) {
-    #scratchText {
-        top: 35%;
-        transform: translateY(-35%);
-    }
-}
-
-@media screen and (min-width: 768px) {
-    #roboticsText {
-        top: -60%;
-        transform: translateY(60%);
-    }
-    #processingText {
-        top: 20vh;
-        /*transform: translateY(-150vh);*/
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .design {
-        width: 100vw;
-    }
 }
 
 @media screen and (min-width: 325px) and (min-height: 570px) {
@@ -113,104 +94,8 @@ img {
     background-color: #40e0d0;
 }
 
-.con {
-    height: 100%;
-    background-color: #E6E6E6;
-}
 
-.design {
-    height: 100%;
-    background-color: #40e0d0;
-}
-
-.interactivity {
-    height: 100%;
-    background-color: #E6E6E6;
-}
-
-#sectionWeb {
-    height: 100vh;
-}
-
-#data {
-    width: 500px;
-    margin: auto;
-}
-
-#github {
-    width: 40vw;
-    height: 40vw;
-    max-height: 50vh
-}
-
-@media screen and (min-height: 425px) and (min-width: 960px) {
-    h1 {
-        font-size: 30px;
-    }
-    h2 {
-        font-size: 25px;
-    }
-    h3 {
-        font-size: 22px;
-    }
-    h4 {
-        font-size: 20px;
-    }
-    ul,
-    p {
-        font-size: 18px;
-    }
-    .nav li{
-        font-size:15px;
-    }
-}
-
-@media screen and (min-height: 700px) {
-    h1 {
-        font-size: 30px;
-    }
-    h2 {
-        font-size: 27px;
-    }
-    h3 {
-        font-size: 24px;
-    }
-    h4 {
-        font-size: 22px;
-    }
-    ul,
-    p {
-        font-size: 20px;
-    }
-     .nav li{
-        font-size:15px;
-    }
-}
-
-@media screen and (min-height: 900px) and (min-width: 1080px) {
-    h1 {
-        font-size: 40px;
-    }
-    h2 {
-        font-size: 36px;
-    }
-    h3 {
-        font-size: 34px;
-    }
-    h4 {
-        font-size: 32px;
-    }
-    ul,
-    p {
-        font-size: 30px;
-    }
-     .nav li{
-        font-size:15px;
-    }
-}
-
-
-/*scroll*/
+/*scroll button*/
 
 .row a {
     position: absolute;
@@ -303,8 +188,171 @@ img {
     max-height: 50vh;
 }
 
+
+/*responsive font size*/
+
+@media screen and (min-height: 425px) and (min-width: 960px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    ul,
+    p {
+        font-size: 18px;
+    }
+    .nav li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-height: 700px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 27px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    ul,
+    p {
+        font-size: 20px;
+    }
+    .nav li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-height: 900px) and (min-width: 1080px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 34px;
+    }
+    h4 {
+        font-size: 32px;
+    }
+    ul,
+    p {
+        font-size: 30px;
+    }
+    .nav li {
+        font-size: 15px;
+    }
+}
+
+
+/******section scratch******/
+
+.scratch {
+    height: calc(100vh - 121px);
+}
+
 #scratchImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 992px) {
+    #scratchText {
+        top: 35%;
+        transform: translateY(-35%);
+    }
+}
+
+
+/******section robotics******/
+
+@media screen and (min-width: 768px) {
+    #roboticsText {
+        top: -60%;
+        transform: translateY(60%);
+    }
+    #processingText {
+        top: 20vh;
+        /*transform: translateY(-150vh);*/
+    }
+}
+
+
+/******section processing******/
+
+@media screen and (min-width: 768px) {
+    #roboticsText {
+        top: -60%;
+        transform: translateY(60%);
+    }
+    #processingText {
+        top: 20vh;
+        /*transform: translateY(-150vh);*/
+    }
+}
+
+
+/******section data******/
+
+#data {
+    width: 500px;
     margin: auto;
+}
+
+
+/******section github******/
+
+#github {
+    width: 40vw;
+    height: 40vw;
+    max-height: 50vh
+}
+
+
+/******section web design******/
+
+#sectionWeb {
+    height: 100vh;
+}
+
+.con {
+    /*web design content section*/
+    height: 100%;
+    background-color: #E6E6E6;
+}
+
+.design {
+    height: 100%;
+    background-color: #40e0d0;
+}
+
+.interactivity {
+    height: 100%;
+    background-color: #E6E6E6;
+}
+
+@media screen and (max-width: 768px) {
+    .design {
+        width: 100vw;
+    }
+}
+
+.sectionWeb {
+    height: 100vh;
 }
 
 
