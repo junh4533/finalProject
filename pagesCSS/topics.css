@@ -27,8 +27,7 @@ body {
     text-align: center;
     background-color: #E6E6E6;
     width: 100vw;
-    font-size: 13px;
-}
+    }
 
 hr {
     margin-top: 0;
@@ -56,6 +55,7 @@ hr.b {
     background-color: #40e0d0;
     width: 100%;
     margin-left: 0;
+    color:white;
 }
 
 .content {
@@ -68,17 +68,18 @@ hr.b {
     width: 100%;
     margin-right: 0;
     margin-left: 0;
+    padding-right:0;
 }
 
-@media screen and (min-width: 325px) and (min-height: 570px) {
-    .sectionMargin {
-        margin-top: 15vh;
-    }
-}
+/*@media screen and (min-width: 325px) and (min-height: 570px) {*/
+/*    .sectionMargin {*/
+/*        margin-top: 15vh;*/
+/*    }*/
+/*}*/
 
-.sectionMargin {
-    margin-top: 5vh;
-}
+/*.sectionMargin {*/
+/*    margin-top: 5vh;*/
+/*}*/
 
 .robotics,
 .processing,
@@ -127,10 +128,11 @@ hr.b {
 }
 
 .circleCrop {
-    width: 300px;
-    height: 300px;
+    width: 35vw;
+    height: 35vw;
     border-radius: 50%;
-    margin: auto;
+    margin:auto;
+  
 }
 
 .circleCrop2 {
@@ -189,74 +191,6 @@ hr.b {
 }
 
 
-/*responsive font size*/
-
-@media screen and (min-height: 425px) and (min-width: 960px) {
-    h1 {
-        font-size: 30px;
-    }
-    h2 {
-        font-size: 25px;
-    }
-    h3 {
-        font-size: 22px;
-    }
-    h4 {
-        font-size: 20px;
-    }
-    ul,
-    p {
-        font-size: 18px;
-    }
-    .nav li {
-        font-size: 15px;
-    }
-}
-
-@media screen and (min-height: 700px) {
-    h1 {
-        font-size: 30px;
-    }
-    h2 {
-        font-size: 27px;
-    }
-    h3 {
-        font-size: 24px;
-    }
-    h4 {
-        font-size: 22px;
-    }
-    ul,
-    p {
-        font-size: 20px;
-    }
-    .nav li {
-        font-size: 15px;
-    }
-}
-
-@media screen and (min-height: 900px) and (min-width: 1080px) {
-    h1 {
-        font-size: 40px;
-    }
-    h2 {
-        font-size: 36px;
-    }
-    h3 {
-        font-size: 34px;
-    }
-    h4 {
-        font-size: 32px;
-    }
-    ul,
-    p {
-        font-size: 30px;
-    }
-    .nav li {
-        font-size: 15px;
-    }
-}
-
 
 /******section scratch******/
 
@@ -276,6 +210,7 @@ hr.b {
         transform: translateY(-35%);
     }
 }
+
 
 
 /******section robotics******/
@@ -309,7 +244,8 @@ hr.b {
 /******section data******/
 
 #data {
-    width: 500px;
+    width: 80vw;
+    max-height:70vh;
     margin: auto;
 }
 
@@ -327,7 +263,7 @@ hr.b {
 
 #sectionWeb {
     height: 100vh;
-}
+    }
 
 .con {
     /*web design content section*/
@@ -354,6 +290,7 @@ hr.b {
 .sectionWeb {
     height: 100vh;
 }
+
 
 
 /*scroll up button*/

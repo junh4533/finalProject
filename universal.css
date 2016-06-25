@@ -1,3 +1,108 @@
+/*responsive font sizes*/
+
+
+/*responsive font size*/
+
+
+/*phones*/
+
+@media screen and (max-height: 580px) and (max-width: 330px) {
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 12px;
+    }
+    ul,
+    p {
+        font-size: 10px;
+    }
+    .glyphicon {
+        font-size: 16px;
+    }
+}
+
+
+/*720p*/
+
+@media screen and (min-height: 768px) and (min-width: 1350px) {
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 29px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    ul,
+    p {
+        font-size: 20px;
+    }
+    .glyphicon {
+        font-size: 29px;
+    }
+}
+
+
+/*1080p*/
+
+@media screen and (min-height: 1000px) and (min-width: 1900px) {
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 35px;
+    }
+    h4 {
+        font-size: 30px;
+    }
+    ul,
+    p {
+        font-size: 25px;
+    }
+    .glyphicon {
+        font-size: 40px;
+    }
+}
+
+
+/*ultrawide+*/
+
+@media screen and (min-height: 1000px) and (min-width: 2500px) {
+    h1 {
+        font-size: 65px;
+    }
+    h2 {
+        font-size: 52px;
+    }
+    h3 {
+        font-size: 45px;
+    }
+    h4 {
+        font-size: 40px;
+    }
+    ul,
+    p {
+        font-size: 35px;
+    }
+    .glyphicon {
+        font-size: 52px;
+    }
+}
+
 p {
     margin: auto;
     transform: translateX(10px);
@@ -6,10 +111,9 @@ p {
 
 body {
     font-family: 'Raleway', sans-serif;
-    
 }
 
-.content{
+.content {
     list-style-position: inside;
 }
 
@@ -108,14 +212,14 @@ p span {
     list-style-position: inside;
 }
 
-@media only screen and (max-width: 768px) and (max-width: 992px) {
-    .introText {
-        font-size: 14px;
-    }
-    .SMhead2 {
-        font-size: 22px;
-    }
-}
+/*@media only screen and (max-width: 768px) and (max-width: 992px) {*/
+/*    .introText {*/
+/*        font-size: 14px;*/
+/*    }*/
+/*    .SMhead2 {*/
+/*        font-size: 22px;*/
+/*    }*/
+/*}*/
 
 
 /*slide animations*/
@@ -176,3 +280,4 @@ p span {
         -webkit-transform: translateY(0%);
     }
 }
+

@@ -60,14 +60,18 @@
 
 /*hide/show top navbar*/
 
-@media(max-width:768px) {
-    .navbar ul {
-        display: none;
-    }
-}
 
-@media(min-width:768px) {
-    #menu-toggle {
-        display: none;
+/*ultrawide+*/
+
+@media screen and (min-height: 1000px) and (min-width: 190px) {
+    .nav li {
+        font-size: 40px;
+    }
+    .navbar {
+        height: 104px;
+    }
+    .navbar-brand img{
+         width: 240px;
+        height: 80px;
     }
 }

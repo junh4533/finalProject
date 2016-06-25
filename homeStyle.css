@@ -106,9 +106,9 @@ p span {
     font-weight: bold;
 }
 
-.introText {
-    font-size: 18px;
-}
+/*.introText {*/
+/*    font-size: 18px;*/
+/*}*/
 
 #diffColor2 {
     background-color: #2FA8A1;
@@ -137,12 +137,40 @@ p span {
 }
 
 iframe {
-    /*width: 90vw;*/
-    /*height: calc(90vw / 1.77778);*/
-    /*position: relative;*/
-    /*left: 5vw;*/
+    max-width: 90vw;
+    max-height: 100vh;
+    width: 60vw;
+    height: 33vw;
 }
 
 .vidFrame {
     color: #E6E6E6;
+}
+
+
+/* ultrawide+ */
+
+@media screen and (min-height: 1000px) and (min-width: 1900px) {
+    h1 {
+        font-size: 65px;
+    }
+    h2 {
+        font-size: 52px;
+    }
+    h3 {
+        font-size: 45px;
+    }
+    h4 {
+        font-size: 40px;
+    }
+    ul,
+    p {
+        font-size: 40px;
+    }
+    .glyphicon {
+        font-size: 52px;
+    }
+    #title {
+        font-size: 160px;
+    }
 }
