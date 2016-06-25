@@ -9,7 +9,7 @@ $(document).ready(function() {
             var pos = $(this).offset().top;
 
             var winTop = $(window).scrollTop();
-            if (pos < winTop + 1000) {
+            if (pos < winTop + 1500) {
                 $(this).addClass("slideUp");
             }
 
@@ -21,7 +21,7 @@ $(document).ready(function() {
             var pos2 = $(this).offset().top;
 
             var winTop = $(window).scrollTop();
-            if (pos2 < winTop + 1000) {
+            if (pos2 < winTop + 1500) {
                 $(this).addClass("slideLeft");
             }
 
@@ -33,7 +33,7 @@ $(document).ready(function() {
             var pos3 = $(this).offset().top;
 
             var winTop = $(window).scrollTop();
-            if (pos3 < winTop + 1000) {
+            if (pos3 < winTop + 1500) {
                 $(this).addClass("slideRight");
             }
 
