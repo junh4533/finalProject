@@ -232,19 +232,25 @@ p span {
 
 .slideUp {
     -webkit-animation-name: slideUp;
+    animation-name: slideUp;
     -webkit-animation-duration: 1s;
+    animation-duration: 1s;
     visibility: visible;
 }
 
 .slideLeft {
     -webkit-animation-name: slideLeft;
+    animation-name: slideLeft;
     -webkit-animation-duration: 1s;
+    animation-duration: 1s;
     visibility: visible;
 }
 
 .slideRight {
     -webkit-animation-name: slideRight;
+    animation-name: slideRight;
     -webkit-animation-duration: 1s;
+    animation-duration: 1s;
     visibility: visible;
 }
 
@@ -252,10 +258,12 @@ p span {
     0% {
         opacity: 0;
         -webkit-transform: translateX(70%);
+        transform: translateX(70%);
     }
     100% {
         opacity: 1;
         -webkit-transform: translateX(0%);
+        transform: translateX(0%);
     }
 }
 
@@ -263,10 +271,12 @@ p span {
     0% {
         opacity: 0;
         -webkit-transform: translateX(-70%);
+        transform: translateX(-70%);
     }
     100% {
         opacity: 1;
         -webkit-transform: translateX(0%);
+        transform: translateX(0%);
     }
 }
 
@@ -274,10 +284,12 @@ p span {
     0% {
         opacity: 0;
         -webkit-transform: translateY(70%);
+        transform: translateY(70%);
     }
     100% {
         opacity: 1;
         -webkit-transform: translateY(0%);
+        transform: translateY(0%);
     }
 }
 
